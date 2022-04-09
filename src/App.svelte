@@ -5,9 +5,8 @@
 	import Logout from './Logout.svelte';
 	import Sign from './Sign.svelte';
 	import Menu  from './Menu.svelte';
-	
-</script>	
 
+</script>	
 
 <body>
 	<div class="top">

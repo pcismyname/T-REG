@@ -1,11 +1,12 @@
 <script>
-    import { mode } from './stores.js';
+    import { account,accounts,mode } from './stores.js';
   </script>
 
 
 <body>
  
   <h1>Welcome!</h1>
+  <div class="user"> {$accounts[$account].name}</div>
   <span class = 'btn'>
     <button  on:click={()=>$mode='complete'} class = 'btn1'>ลงทะเบียนเรียน</button><br>
     <button  on:click={()=>$mode='complete'} class = 'btn2'>ผลการลงทะเบียน</button><br>
@@ -27,6 +28,15 @@
     margin: 0 auto;
   }
   h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 1.1;
+    margin: 2rem auto;
+    max-width: 15rem;
+  }
+  .user {
     color: white;
     text-transform: uppercase;
     font-size: 4rem;

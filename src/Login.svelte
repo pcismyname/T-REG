@@ -19,32 +19,35 @@
 
 <body> 
     <div class="center">
-        <h1>MOCK</h1>
-        <form method="post">
-            <div class="txt_field">
-                <input bind:value={username}  type="text" id="username" required>
-                <span></span>
-                <!-- svelte-ignore a11y-label-has-associated-control -->
-                <label >Username</label>
-            </div>
-            <div class="txt_field">
-                <input  bind:value={pin}  type="password" id="password" required>
-                <span></span>
-                <!-- svelte-ignore a11y-label-has-associated-control -->
-                <label >Password</label>
-            </div>
-            <div>
-            <input on:click={isLogin} type="submit" value="Login">
-            
-        </form>
-    </div>
+        <h1>Enrollment Login</h1>
+
+        <div>
+            <label for="UserId">User ID</label>
+            <input bind:value={username}>
+        </div>
+        <div>
+            <label for="Password">Password</label>
+            <input type="password" bind:value={pin} >
+        </div>
+    
+        <div>
+        <button on:click={isLogin}>Sign in</button>
+        </div>
+    
 </body>    
 
 
 <style>
-    h1{
-        font-size: 100px;
-        z-index: 10;
-        color: (0,0,0,0.5);
-    }
+  body{color: white;}
+    
+    button{color: #E4BAFF;
+        border-radius: 10px;
+        padding: 10px 100px;
+        margin: 20px 0;}
+        
+    input{background: none;
+        border: 2px solid white;
+        border-radius: 10px;
+        padding: 10px 25px;
+        margin: 5px 0;}
 </style>
