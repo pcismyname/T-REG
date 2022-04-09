@@ -1,8 +1,8 @@
 <script>
+        import { account,accounts, mode } from './stores.js';
 </script>
 
  <img src="img/correct.png" alt="">
-    <button class="sign_out" >SIGN OUT</button>
     <h1>ลงทะเบียนสำเร็จ</h1>
     <button class="back">BACK TO MENU</button>
 
@@ -27,20 +27,7 @@
         
 
     }
-    .sign_out {
-        background: rgba(255, 255, 255, 0);
-        display: flex;
-        position: absolute;
-        top: 2.5rem;
-        right: 3rem;
-        width: fit-content;
-        height: fit-content;
-        border-radius: 10px;
-        border: 4px solid white;  
-        color: white;
-        cursor: pointer;
-
-    }
+  
     .back {
         background: rgba(255, 255, 255, 0);
         width: 10rem;
