@@ -1,45 +1,44 @@
 <script>
-    import {accounts, islogin} from './store.js';
+    import { accounts, account, islogin, mode } from './stores.js';
+    let username = '';
+    let pin = '';
 
-    let accountNo ='';
-    let pin ='';
-
-    function checklogin() {
-        if (!(accountNo in $accounts) || $accounts[accountNo].pin != pin) {
-            alert('incorrect ID or Pin');
-        } else {
+    function isLogin(){
+        if(!(username in $accounts) || $accounts[username].pin != pin){
+            alert('Incorrect Username or password');
+        }
+        else {
             $islogin = true;
-            accountNo ='';
-            pin='';
-            {
-            alert('welcome');}
+            $mode = 'menu';
+            $account = username;
+            username = '';
+            pin = '';  
         }
     }
 </script>
 
+<body> 
+    <div class="center">
+        <h1>Enrollment Login</h1>
 
-
-<body>
-    <h1>Enrollment Login</h1>
-
-    <div>
-        <label for="UserId">User ID</label>
-        <input bind:value={accountNo}>
-    </div>
-    <div>
-        <label for="Password">Password</label>
-        <input type="password" bind:value={pin} >
-    </div>
+        <div>
+            <label for="UserId">User ID</label>
+            <input bind:value={username}>
+        </div>
+        <div>
+            <label for="Password">Password</label>
+            <input type="password" bind:value={pin} >
+        </div>
     
-    <div>
-    <button on:click={checklogin}>Sign in</button>
-    </div>
-
+        <div>
+        <button on:click={isLogin}>Sign in</button>
+        </div>
     
-</body>
+</body>    
+
 
 <style>
-    body{color: white;}
+  body{color: white;}
     
     button{color: #E4BAFF;
         border-radius: 10px;

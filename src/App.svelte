@@ -1,37 +1,45 @@
 <script>
-    import {islogin} from './store.js'
-    import Login from './Login.svelte';
-    import Logout from './Logout.svelte';
-</script>
+	import { islogin, mode } from './stores.js';
+	import Complete from './Complete.svelte'
+	import Login from './Login.svelte';
+	import Logout from './Logout.svelte';
+	import Sign from './Sign.svelte';
+	import Menu  from './Menu.svelte';
+
+</script>	
+
 
 <body>
 	<div class="top">
-    <img class="logo" src="img\logo.png" alt="">
-        <div class="nav_lists">		
-            <button class="nav_item">Home</button>
-            <button class="nav_item">Contact Us</button>
-            <button class="nav_item" >Help</button>
-        </div>
-</div>
-
-{#if !$islogin}
-	<Login/>
-{:else}
-    <Logout/>
-{/if}
-
+		<img class="logo" src="img\logo.png" alt="">
+			<div class="nav_lists">		
+				<button class="nav_item">Home</button>
+				<button class="nav_item">Contact Us</button>
+				<button class="nav_item" >Help</button>
+			</div>
+	</div>
+	
+	{#if !$islogin}
+	<Login />
+	<Sign/>
+	{:else}
+		{#if $mode == 'menu'}
+			<Menu/>
+		{:else if $mode == 'complete'}
+			<Complete/>
+	  {/if}
+	  <Logout/>
+	{/if}
 
 </body>
 
 <style>
-    :global(body) {
+:global(body) {
     background: linear-gradient(296.82deg, #E4BAFF 0%, #AEBAF8 100%),
     linear-gradient(0deg, #FFFFFF, #FFFFFF);
 }
 .top{
     display: flex;
-    width: fit-content;
-   
 }
 .nav_lists {
     list-style: none;
@@ -56,5 +64,5 @@
       width: auto;
       height: auto;
       padding-right: 1rem;
-}
+}	
 </style>
