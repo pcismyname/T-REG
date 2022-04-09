@@ -25,7 +25,7 @@
     top: 2.5rem;
     right: 8rem;
     border-radius: 10px;
-    border: 4px solid white;  
+    border: 2px solid white;  
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
