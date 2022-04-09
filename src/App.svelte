@@ -41,7 +41,6 @@
 }
 .top{
     display: flex;
-
 }
 .nav_lists {
     list-style: none;
