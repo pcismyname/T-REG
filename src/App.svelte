@@ -4,7 +4,9 @@
 	import Login from './Login.svelte';
 	import Logout from './Logout.svelte';
 	import Sign from './Sign.svelte';
-</script>
+	import Menu  from './Menu.svelte';
+	
+</script>	
 
 
 <body>
@@ -22,7 +24,9 @@
 	<Sign/>
 	{:else}
 		{#if $mode == 'menu'}
-			  <Complete/>
+			<Menu/>
+		{:else if $mode == 'complete'}
+			<Complete/>
 	  {/if}
 	  <Logout/>
 	{/if}
