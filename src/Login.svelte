@@ -35,9 +35,20 @@
     <button on:click={checklogin}>Sign in</button>
     </div>
 
-    <div>
-        <button>Don't have an account?</button>
-    </div>
     
 </body>
 
+<style>
+    body{color: white;}
+    
+    button{color: #E4BAFF;
+        border-radius: 10px;
+        padding: 10px 100px;
+        margin: 20px 0;}
+        
+    input{background: none;
+        border: 2px solid white;
+        border-radius: 10px;
+        padding: 10px 25px;
+        margin: 5px 0;}
+</style>
