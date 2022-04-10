@@ -5,6 +5,7 @@
 	import Logout from './Logout.svelte';
 	import Sign from './Sign.svelte';
 	import Menu  from './Menu.svelte';
+	import Regist from './Regist.svelte';
 
 </script>	
 
@@ -17,7 +18,8 @@
 				<button class="nav_item" >Help</button>
 			</div>
 	</div>
-	
+	<Regist/>
+	<!--
 	{#if !$islogin}
 	<Login />
 	<Sign/>
@@ -29,6 +31,7 @@
 	  {/if}
 	  <Logout/>
 	{/if}
+	-->
 
 </body>
 
