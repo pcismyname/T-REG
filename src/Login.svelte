@@ -15,6 +15,12 @@
             pin = '';  
         }
     }
+    function submit(event) {
+        if (event.key === 'Enter') {
+            isLogin();
+        }
+    }
+
 </script>
 
 <body> 
@@ -23,11 +29,11 @@
 
         <div>
             <label for="UserId">User ID</label>
-            <input bind:value={username}>
+            <input bind:value={username} on:keydown={submit}>
         </div>
         <div>
             <label for="Password">Password</label>
-            <input type="password" bind:value={pin} >
+            <input type="password" bind:value={pin} on:keydown={submit} >
         </div>
     
         <div>
