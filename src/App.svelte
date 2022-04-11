@@ -19,8 +19,6 @@
 			</div>
 		</nav>
 		
-	<Regist/>
-	<!--
 	{#if !$islogin}
 	<Login />
 	<Sign/>
@@ -34,7 +32,6 @@
 	  {/if}
 	  <Logout/>
 	{/if}
-	-->
 
 	
 
