@@ -1,11 +1,19 @@
 <script>
-  import {accounts, account, mode} from './stores.js'
+  import {accounts, account, mode} from './stores.js;'
+  import { createEventDispatcher} from 'svelte';
   let current = '';
   let cur_button = '';
   let q_sf210 = 100;
-  function click(){
-    return value -= 1
+
+  let shown = false;
+	
+  let dispatch = createEventDispatcher();
+
+  export function show() {
+      shown = !shown;
+      dispatch('show', shown);
   }
+  
 
 </script>
 
@@ -73,7 +81,7 @@
     </tr>
 
     <td colspan="4">
-      <div class="sub_table" class:selected="{current === 'tu100'}">
+      <div class="sub_table" >
         <tr class="sub_row" >
           <td> Section 760001 </td><td>Mon 9.30-12.30</td><td>Prof.Weerachai&nbsp&nbsp&nbsp&nbsp</td>
           <td > 35/100 &nbsp&nbsp&nbsp</td><td><button  class="regist"> ลงทะเบียน </button></td>
