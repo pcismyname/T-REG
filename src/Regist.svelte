@@ -108,20 +108,22 @@
 
 <style>
     .main_table { 
-        border-collapse: separate;
+        border-collapse: collapse; 
         margin-left: auto;
         margin-right: auto;
-
+        border: 10px;
+        border-radius: 20px;
+        
     }
- 
-  .main_row {
-    cursor: pointer;
-  }
+
+    .main_table:nth-child(2){ border: solid thin; }
+    .main_table:nth-child(4) { border: solid thin; }
+    .main_table:nth-child(3){ border: solid thin; }
 
     .sub_table{
       position: relative;
       background: white;
-      border-radius: 15px;
+      border-radius: 10px;
     }
 
     .regist{

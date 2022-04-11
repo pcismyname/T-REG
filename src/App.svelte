@@ -9,6 +9,7 @@
 
 </script>	
 
+
 <body>
 	<nav class="top">
 		<img class="logo" src="img\logo.png" alt="">
@@ -49,7 +50,6 @@
 }
 .top{
     display: flex;
-
 }
 .nav_lists {
     list-style: none;
