@@ -6,9 +6,8 @@
 <body>
  
   <h1>Welcome!</h1>
-  <div class="user"> {$accounts[$account].name}</div>
   <span class = 'btn'>
-    <button  on:click={()=>$mode='regist'} class = 'btn1'>ลงทะเบียนเรียน</button><br>
+    <button  on:click={()=>$mode='login'} class = 'btn1'>Sign In</button><br>
   </span>
 
 </body>
