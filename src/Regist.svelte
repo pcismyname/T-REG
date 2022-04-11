@@ -2,10 +2,13 @@
     import { account,accounts,mode } from './stores.js';
     import { createToggle } from "./toggle.js"
   let current = '';
-  let cur_button = '';
   let q_sf210 = 100;
-  let show = false;
-  const display = createToggle(false)
+  const display1 = createToggle(false)
+  const display2 = createToggle(false)
+  const display3 = createToggle(false)
+
+
+
   </script>
 
 <h1>ลงทะเบียนเรียน</h1>
@@ -17,13 +20,14 @@
         <th>หน่วยกิต</th>
     </tr>
 
-    <tr  on:click="{() => current = 'sf210'}">
+    <tr  on:click={display1.toggle}>
       <td>SF210</td>
       <td>PROGRAMMING SKILL DEVELOPEMENT 1 </td>
       <td>{q_sf210}</td>
       <td>3.0</td>
     </tr>
 
+    {#if $display1}
     <td colspan="4">
     <div class="sub_table" class:selected="{current === 'sf210'}">
       <tr class="sub_row" >
@@ -40,13 +44,17 @@
       </tr>
     </div>
   </td>
+  {/if}
 
-    <tr on:click="{() => current = 'sf220'}">
+
+    <tr on:click={display2.toggle}>
       <td>SF220</td>
       <td>INTRODUCTION TO SOFTWARE ENGINEER</td>
       <td>100</td>
       <td>3.0</td>
     </tr>
+
+    {#if $display2}
     <td colspan="4">
       <div class="sub_table" class:selected="{current === 'sf220'}">
         <tr class="sub_row" >
@@ -63,16 +71,17 @@
         </tr>
       </div>
     </td>
+    {/if}
 
-    <tr on:click={display.toggle}>
+    <tr on:click={display3.toggle}>
       <td>TU100</td>
       <td>CIVIC ENGAGEMENT</td>
       <td>100</td>
       <td>3.0</td>
     </tr>
-  {#if $display}
+  {#if $display3}
     <td colspan="4">
-      <div class="sub_table_test" >
+      <div class="sub_table" >
         <tr class="sub_row">
           <td> Section 760001 </td><td>Mon 9.30-12.30</td><td>Prof.Weerachai&nbsp&nbsp&nbsp&nbsp</td>
           <td > 35/100 &nbsp&nbsp&nbsp</td><td><button  class="regist"> ลงทะเบียน </button></td>
@@ -95,27 +104,19 @@
 <style>
     .main_table { 
         border-collapse: collapse; 
+
     }
     .main_table:nth-child(2){ border: solid thin; }
     .main_table:nth-child(4) { border: solid thin; }
     .main_table:nth-child(3){ border: solid thin; }
 
-    .sub_table_test {
-      position: relative;
-      background: white;
-      border-radius: 15px;
-    }
+
     .sub_table{
       position: relative;
-      display: none;
       background: white;
       border-radius: 15px;
     }
-    .selected {
-      display: inline-table;
-      list-style: none;
-      border: 15px;
-    }
+
     .regist{
       background: rgb(106, 106, 188);
       border: none;
