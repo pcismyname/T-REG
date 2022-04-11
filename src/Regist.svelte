@@ -33,7 +33,7 @@
     <div class="sub_table" class:selected="{current === 'sf210'}">
       <tr class="sub_row" >
         <td> Section 760001 </td><td>Mon 9.30-12.30</td><td>Prof.Weerachai&nbsp&nbsp&nbsp&nbsp</td>
-        <td > 35/100 &nbsp&nbsp&nbsp</td><td><button on:click="{() => current = 'check'}"  class="regist"> ลงทะเบียน </button></td>
+        <td > 35/100 &nbsp&nbsp&nbsp</td><td><button   class="regist"> ลงทะเบียน </button></td>
       </tr>
       <tr class="sub_row">
         <td> Section 760001 </td><td>Mon 9.30-12.30</td><td>Prof.Weerachai</td>
@@ -108,21 +108,10 @@
 
 <style>
     .main_table { 
-        border-collapse: collapse;
+        border-collapse: separate;
 
     }
-    .main_table:nth-child(2){ border: solid thin; }
-    .main_table:nth-child(4) { border: solid thin; }
-    .main_table:nth-child(3){ border: solid thin; }
-    .main_table {
-      -webkit-touch-callout: none; /* iOS Safari */
-      -webkit-user-select: none; /* Safari */
-      -khtml-user-select: none; /* Konqueror HTML */
-      -moz-user-select: none; /* Old versions of Firefox */
-      -ms-user-select: none; /* Internet Explorer/Edge */
-      user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
-  }
-
+ 
   .main_row {
     cursor: pointer;
   }
@@ -134,7 +123,7 @@
     }
 
     .regist{
-      background: rgb(106, 106, 188);
+      background: #E4BAFF;
       border: none;
       border-radius: 15px;
       color: white;
