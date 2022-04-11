@@ -18,7 +18,8 @@
 				<button class="nav_item" >Help</button>
 			</div>
 		</nav>
-	<Regist></Regist>	
+	
+	<Regist/>
 	<!--
 	{#if !$islogin}
 	<Login />
@@ -33,11 +34,7 @@
 	  {/if}
 	  <Logout/>
 	{/if}
-
 	-->
-
-	
-
 </body>
 
 <style>
