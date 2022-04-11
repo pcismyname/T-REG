@@ -8,10 +8,10 @@
   <h1>Welcome!</h1>
   <div class="user"> {$accounts[$account].name}</div>
   <span class = 'btn'>
-    <button  on:click={()=>$mode='regist'} class = 'btn1'>ลงทะเบียนเรียน</button><br>
-    <button  on:click={()=>$mode='complete'} class = 'btn2'>ผลการลงทะเบียน</button><br>
-    <button  on:click={()=>$mode='complete'} class = 'btn3'>คู่มือการลงทะเบียน</button><br>
-    <button  on:click={()=>$mode='complete'} class = 'btn4'> ตารางเรียน</button><br>
+    <button  on:click={()=>$mode='regist'} class = 'btn'>ลงทะเบียนเรียน</button><br>
+    <button  on:click={()=>$mode='complete'} class = 'btn'>ผลการลงทะเบียน</button><br>
+    <button  on:click={()=>$mode='complete'} class = 'btn'>คู่มือการลงทะเบียน</button><br>
+    <button  on:click={()=>$mode='complete'} class = 'btn'> ตารางเรียน</button><br>
     <button  on:click={()=>$mode='complete'} class = 'btn5'>ถอนรายวิชา</button><br>
   </span>
 
@@ -33,8 +33,9 @@
     font-size: 4rem;
     font-weight: 100;
     line-height: 1.1;
-    margin: 2rem auto;
-    max-width: 15rem;
+    margin-left: auto;
+    margin-right: auto;
+    
   }
   .user {
     color: white;
@@ -42,23 +43,41 @@
     font-size: 4rem;
     font-weight: 100;
     line-height: 1.1;
-    margin: 2rem auto;
-    max-width: 15rem;
+    margin-left: auto;
+    margin-right: auto;
+    
   }
   button{
-    padding: 20px 50px;
+    padding: 10px 20px;
     width: 17rem;
     border : 0 px ;
     border-radius: 15px;
     border-color:white;
-    background : transparent;
+    background : white;
     margin: 5px;
-    
-    color: white;
+    color:rgba(174, 186, 248, 1);
     text-align: center;
-    font-size: 1.10rem;
+    font-size: 20px;
+  }
+
+  .btn5{
+    color:#DEBAFE;
+    background: #9197D6;
+    border-color:#9197D6;
   }
   
+  .btn5{
+    padding: 10px 20px;
+    width: 17rem;
+    border : 0 px ;
+    border-radius: 15px;
+    border-color:rgba(145, 151, 214, 1);
+    background : rgba(145, 151, 214, 1);
+    margin: 5px;
+    color:rgba(222, 186, 254, 1);
+    text-align: center;
+    font-size: 20px;
+  }
 </style>
 
 
