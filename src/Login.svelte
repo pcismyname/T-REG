@@ -64,7 +64,7 @@
         padding: 10px 25px;
         margin: 5px 0;}
 
-    .center{ width: 600px;
+    .center{ width: 550px;
         height: 400px;
         border: 4px solid white;
         border-radius: 20px;
@@ -73,6 +73,9 @@
         margin-right: auto;
     }
     .photo{ 
+        position: relative;
+        top: -351px;
+        left: 320px;
         background-size: cover;
         height: 400px;
         border-radius: 25px;

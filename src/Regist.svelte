@@ -13,6 +13,7 @@
   
 
 <h1>ลงทะเบียนเรียน</h1>
+<div class = "tableConfig">
 <table class="main_table">
     <tr>
         <th>รหัสวิชา</th>
@@ -31,18 +32,20 @@
     {#if $display1 }
     <td colspan="4" transition:fade>
     <div class="sub_table" class:selected="{current === 'sf210'}">
-      <tr class="sub_row" >
+      <div class="sub_row">
+      <tr >
         <td> Section 760001 </td><td>Mon 9.30-12.30</td><td>Prof.Weerachai&nbsp&nbsp&nbsp&nbsp</td>
         <td > 35/100 &nbsp&nbsp&nbsp</td><td><button   class="regist"> ลงทะเบียน </button></td>
       </tr>
-      <tr class="sub_row">
+      <tr>
         <td> Section 760001 </td><td>Mon 9.30-12.30</td><td>Prof.Weerachai</td>
         <td> 35/100 </td><td><button on:click="{() => current = 'check'}" class="regist">ลงทะเบียน</button></td>
       </tr>
-      <tr class="sub_row">
+      <tr>
         <td> Section 760001 </td><td>Mon 9.30-12.30</td><td>Prof.Weerachai</td>
         <td> 35/100 </td><td><button on:click="{() => current = 'check'}" class="regist">ลงทะเบียน</button></td>
       </tr>
+    </div>
     </div>
   </td>
   {/if}
@@ -100,19 +103,29 @@
 {/if}
 
 </table>
-
+</div>
 
 <button on:click={()=>$mode='menu'} class="back">BACK TO MENU</button>
 
 
 
 <style>
+    .tableConfig{
+      padding: 20px;
+      border: 4px solid white;
+      border-radius: 20px;
+      width: 75%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
     .main_table { 
         border-collapse: collapse; 
         margin-left: auto;
         margin-right: auto;
-        border: 10px;
-        border-radius: 20px;
+        font-size: 20px;
+        color: white;
+        width: 100%;
         
     }
 
@@ -124,7 +137,30 @@
       position: relative;
       background: white;
       border-radius: 10px;
+      color: darkblue;
+      width: 85%;
+      margin-left: auto;
+      margin-right: auto;
     }
+
+    .sub_row{
+      width: 100%;
+    }
+
+    th{
+      padding-top: 10px;
+      padding-bottom: 10px;
+      text-align: center;
+    }
+    
+    td{
+      text-align: center;
+      padding-left: 25px;
+      padding-right: 25px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    
 
     .regist{
       background: #E4BAFF;
@@ -132,7 +168,11 @@
       border-radius: 15px;
       color: white;
     }
-    .back {
+    
+    h1{
+      margin-left: 100px;
+      color: white;
+      padding: 20px;
     }
    
    
