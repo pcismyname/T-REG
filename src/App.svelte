@@ -19,8 +19,6 @@
 			</div>
 		</nav>
 	
-	<Regist/>
-	<!--
 	{#if !$islogin}
 	<Login />
 	<Sign/>
@@ -34,7 +32,6 @@
 	  {/if}
 	  <Logout/>
 	{/if}
-	-->
 </body>
 
 <style>
@@ -43,6 +40,12 @@
     background: linear-gradient(296.82deg, #E4BAFF 0%, #AEBAF8 100%),
     linear-gradient(0deg, #FFFFFF, #FFFFFF);
 	min-width: 1440px;
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }
 .top{
     display: flex;

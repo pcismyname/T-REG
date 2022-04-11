@@ -20,7 +20,7 @@
         <th>หน่วยกิต</th>
     </tr>
 
-    <tr  on:click={display1.toggle}>
+    <tr class="main_row"  on:click={display1.toggle}>
       <td>SF210</td>
       <td>PROGRAMMING SKILL DEVELOPEMENT 1 </td>
       <td>{q_sf210}</td>
@@ -47,7 +47,7 @@
   {/if}
 
 
-    <tr on:click={display2.toggle}>
+    <tr  class="main_row" on:click={display2.toggle}>
       <td>SF220</td>
       <td>INTRODUCTION TO SOFTWARE ENGINEER</td>
       <td>100</td>
@@ -73,7 +73,7 @@
     </td>
     {/if}
 
-    <tr on:click={display3.toggle}>
+    <tr  class="main_row" on:click={display3.toggle}>
       <td>TU100</td>
       <td>CIVIC ENGAGEMENT</td>
       <td>100</td>
@@ -103,13 +103,24 @@
 
 <style>
     .main_table { 
-        border-collapse: collapse; 
+        border-collapse: collapse;
 
     }
     .main_table:nth-child(2){ border: solid thin; }
     .main_table:nth-child(4) { border: solid thin; }
     .main_table:nth-child(3){ border: solid thin; }
+    .main_table {
+      -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+      -khtml-user-select: none; /* Konqueror HTML */
+      -moz-user-select: none; /* Old versions of Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+      user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+  }
 
+  .main_row {
+    cursor: pointer;
+  }
 
     .sub_table{
       position: relative;
@@ -123,5 +134,6 @@
       border-radius: 15px;
       color: white;
     }
+   
    
 </style>
