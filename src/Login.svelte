@@ -17,52 +17,33 @@
     }
 
     let src = '/img/Group_34.png'; 
-     
-</script>
-
-<body> 
+    
     function submit(event) {
         if (event.key === 'Enter') {
             isLogin();
-        }
-    }
-
+        }}
 </script>
+
+
 
 <body> 
     <div class="center">
-        <h1>Enrollment Login</h1>
+        <h2>Enrollment Login</h2>
 
         <div>
-            <label for="UserId">User ID</label>
+            <div><label for="UserId">User ID</label></div> 
             <input bind:value={username} on:keydown={submit}>
         </div>
         <div>
-            <label for="Password">Password</label>
+            <div><label for="Password">Password</label></div>
             <input type="password" bind:value={pin} on:keydown={submit} >
         </div>
-    
-    <div class="center">
         
-       <div class="system">
-            <h1>Enrollment Login</h1>
-
-            <div>
-                <label for="UserId">User ID</label>
-                <input bind:value={username}>
-            </div>
-            <div>
-                <label for="Password">Password</label>
-                <input type="password" bind:value={pin} >
-            </div>
-        
-            <div>
+        <div>
             <button on:click={isLogin}>Sign in</button>
-            </div>
-        
-        </div> 
-        
-    <div class = "photo"></div>
+        </div>
+          
+    <div><img {src}  class = "photo" alt=""></div>
 
 </div>
     
@@ -74,7 +55,7 @@
 
     button{color: #E4BAFF;
         border-radius: 10px;
-        padding: 10px 100px;
+        padding: 10px 95px;
         margin: 20px 0;}
 
     input{background: none;
@@ -84,17 +65,18 @@
         margin: 5px 0;}
 
     .center{ width: 600px;
-        height: 325px;
+        height: 400px;
         border: 4px solid white;
         border-radius: 20px;
         padding: 50px 40px;
         margin-left: auto;
         margin-right: auto;
     }
-    .photo{  background-image:url(https://drive.google.com/file/d/1sFbEyW2RVCInV9JDwQAxlBRok8vLvZO6/preview);
+    .photo{ 
         background-size: cover;
-        height: 500px;
+        height: 400px;
         border-radius: 25px;
+        display: inline-block;
 }
     
     
