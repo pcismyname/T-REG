@@ -95,7 +95,13 @@
 <style>
     .main_table { 
         border-collapse: collapse; 
+        margin-left: auto;
+        margin-right: auto;
+        border: 10px;
+        border-radius: 20px;
+        
     }
+
     .main_table:nth-child(2){ border: solid thin; }
     .main_table:nth-child(4) { border: solid thin; }
     .main_table:nth-child(3){ border: solid thin; }
@@ -105,7 +111,7 @@
       position: relative;
       display: none;
       background: white;
-      border-radius: 15px;
+      border-radius: 10px;
     }
     .selected {
       display: inline-table;
