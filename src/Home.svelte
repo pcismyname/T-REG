@@ -1,0 +1,76 @@
+<script>
+    import { account,accounts,mode } from './stores.js';
+    
+  </script>
+
+
+<body>
+ 
+  <h1>Welcome to </h1>
+  <img class="logo" src="img\logo.png" alt="">
+  <h2>Online enrollment system <br> for University</h2>
+  <img class="mascothome" src="img\mascothome.png" alt="">
+  <span class = 'btn'>
+    <button  on:click={()=>$mode='signin'} class = 'btn1'>Sign In</button><br>
+  </span>
+
+</body>
+
+<style>
+  :root {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+      
+  }
+  body {
+    text-align: center;
+    padding: 1em;
+    margin: 0 auto;
+  }
+  h1 {text-align: left;
+    font-weight: 600;
+    font-size: 4rem;
+    line-height: 1.1;
+    color: #FFFFFF;
+    padding-left: 20rem;
+
+  }
+  h2 {text-align: left;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 1.1;
+    color: #FFFFFF;
+    padding-left: 20rem;
+
+  }
+
+  button{
+    padding: 20px 50px;
+    border : 0 px ;
+    border-radius: 15px;
+    border-color:black;
+    background-color : black;
+    margin: 5px;
+    color: white;
+    text-align: left;
+    font-size: 1.30rem;
+    position: absolute;
+    left: 20.7rem;
+    top: 350px;
+  }
+
+  .logo{
+    position: relative;
+    top: -30px;
+    left: 19.5rem;
+  }
+  .mascothome{
+    position: absolute;
+    width: 550px;
+    height: 550px;
+    left: 1000px;
+    top: 0px;
+  }
+  
+</style>
+
+

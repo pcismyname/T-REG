@@ -109,6 +109,8 @@
 <style>
     .main_table { 
         border-collapse: separate;
+        margin-left: auto;
+        margin-right: auto;
 
     }
  
