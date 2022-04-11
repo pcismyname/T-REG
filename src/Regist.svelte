@@ -1,15 +1,16 @@
 <script>
-    import { account,accounts,mode } from './stores.js';
-    import { createToggle } from "./toggle.js"
+  import { account,accounts,mode } from './stores.js';
+  import { createToggle } from "./toggle.js"
+  import { fade } from 'svelte/transition';
+
   let current = '';
   let q_sf210 = 100;
+  let q_sf220 = 100;
   const display1 = createToggle(false)
   const display2 = createToggle(false)
   const display3 = createToggle(false)
-
-
-
   </script>
+  
 
 <h1>ลงทะเบียนเรียน</h1>
 <table class="main_table">
@@ -27,12 +28,12 @@
       <td>3.0</td>
     </tr>
 
-    {#if $display1}
-    <td colspan="4">
+    {#if $display1 }
+    <td colspan="4" transition:fade>
     <div class="sub_table" class:selected="{current === 'sf210'}">
       <tr class="sub_row" >
         <td> Section 760001 </td><td>Mon 9.30-12.30</td><td>Prof.Weerachai&nbsp&nbsp&nbsp&nbsp</td>
-        <td > 35/100 &nbsp&nbsp&nbsp</td><td><button on:click="{() => current = 'check'}"  class="regist"> ลงทะเบียน </button></td>
+        <td > 35/100 &nbsp&nbsp&nbsp</td><td><button   class="regist"> ลงทะเบียน </button></td>
       </tr>
       <tr class="sub_row">
         <td> Section 760001 </td><td>Mon 9.30-12.30</td><td>Prof.Weerachai</td>
@@ -55,7 +56,7 @@
     </tr>
 
     {#if $display2}
-    <td colspan="4">
+    <td colspan="4" transition:fade>
       <div class="sub_table" class:selected="{current === 'sf220'}">
         <tr class="sub_row" >
           <td> Section 760001 </td><td>Mon 9.30-12.30</td><td>Prof.Weerachai&nbsp&nbsp&nbsp&nbsp</td>
@@ -80,7 +81,7 @@
       <td>3.0</td>
     </tr>
   {#if $display3}
-    <td colspan="4">
+    <td colspan="4" transition:fade>
       <div class="sub_table" >
         <tr class="sub_row">
           <td> Section 760001 </td><td>Mon 9.30-12.30</td><td>Prof.Weerachai&nbsp&nbsp&nbsp&nbsp</td>
@@ -101,23 +102,18 @@
 </table>
 
 
+<button on:click={()=>$mode='menu'} class="back">BACK TO MENU</button>
+
+
+
 <style>
     .main_table { 
-        border-collapse: collapse;
+        border-collapse: separate;
+        margin-left: auto;
+        margin-right: auto;
 
     }
-    .main_table:nth-child(2){ border: solid thin; }
-    .main_table:nth-child(4) { border: solid thin; }
-    .main_table:nth-child(3){ border: solid thin; }
-    .main_table {
-      -webkit-touch-callout: none; /* iOS Safari */
-      -webkit-user-select: none; /* Safari */
-      -khtml-user-select: none; /* Konqueror HTML */
-      -moz-user-select: none; /* Old versions of Firefox */
-      -ms-user-select: none; /* Internet Explorer/Edge */
-      user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
-  }
-
+ 
   .main_row {
     cursor: pointer;
   }
@@ -129,10 +125,12 @@
     }
 
     .regist{
-      background: rgb(106, 106, 188);
+      background: #E4BAFF;
       border: none;
       border-radius: 15px;
       color: white;
+    }
+    .back {
     }
    
    
