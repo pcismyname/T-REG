@@ -1,21 +1,15 @@
 <script>
-  import {accounts, account, mode} from './stores.js;'
-  import { createEventDispatcher} from 'svelte';
+    import { account,accounts,mode } from './stores.js';
+    import { createToggle } from "./toggle.js"
   let current = '';
   let cur_button = '';
   let q_sf210 = 100;
+  let show = false;
+  const display = createToggle(false)
 
-  let shown = false;
-	
-  let dispatch = createEventDispatcher();
 
-  export function show() {
-      shown = !shown;
-      dispatch('show', shown);
-  }
-  
 
-</script>
+  </script>
 
 <h1>ลงทะเบียนเรียน</h1>
 <table class="main_table">
@@ -73,16 +67,16 @@
       </div>
     </td>
 
-    <tr on:click="{() => current = 'tu100'}">
+    <tr on:click={display.toggle}>
       <td>TU100</td>
       <td>CIVIC ENGAGEMENT</td>
       <td>100</td>
       <td>3.0</td>
     </tr>
-
+  {#if $display}
     <td colspan="4">
-      <div class="sub_table" >
-        <tr class="sub_row" >
+      <div class="sub_table_test" >
+        <tr class="sub_row">
           <td> Section 760001 </td><td>Mon 9.30-12.30</td><td>Prof.Weerachai&nbsp&nbsp&nbsp&nbsp</td>
           <td > 35/100 &nbsp&nbsp&nbsp</td><td><button  class="regist"> ลงทะเบียน </button></td>
         </tr>
@@ -96,6 +90,7 @@
         </tr>
       </div>
   </td>
+{/if}
 
 </table>
 
@@ -108,7 +103,11 @@
     .main_table:nth-child(4) { border: solid thin; }
     .main_table:nth-child(3){ border: solid thin; }
 
-    
+    .sub_table_test {
+      position: relative;
+      background: white;
+      border-radius: 15px;
+    }
     .sub_table{
       position: relative;
       display: none;
@@ -120,7 +119,6 @@
       list-style: none;
       border: 15px;
     }
-   
     .regist{
       background: rgb(106, 106, 188);
       border: none;
