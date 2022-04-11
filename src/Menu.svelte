@@ -51,12 +51,18 @@
     border : 0 px ;
     border-radius: 15px;
     border-color:white;
-    background : transparent;
+    background : white;
     margin: 5px;
     
-    color: white;
+    color:#AEBAF8;
     text-align: center;
     font-size: 1.10rem;
+  }
+
+  .btn5{
+    color:#DEBAFE;
+    background: #9197D6;
+    border-color:#9197D6;
   }
   
 </style>
