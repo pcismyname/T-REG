@@ -6,9 +6,6 @@
   let q_sf210 = 100;
   let show = false;
   const display = createToggle(false)
-
-
-
   </script>
 
 <h1>ลงทะเบียนเรียน</h1>
