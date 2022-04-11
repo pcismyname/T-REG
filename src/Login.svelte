@@ -38,16 +38,24 @@
 
 
 <style>
-  body{color: white;}
-    
+    body{color: white;}
+
     button{color: #E4BAFF;
         border-radius: 10px;
         padding: 10px 100px;
         margin: 20px 0;}
-        
+
     input{background: none;
         border: 2px solid white;
         border-radius: 10px;
         padding: 10px 25px;
-        margin: 5px 0;}
+        margin: 5px 0;} 
+    .center{ width: 600px;
+        height: 325px;
+        border: 2px solid white;
+        border-radius: 10px;
+        padding: 50px 40px;
+        margin-left: auto;
+        margin-right: auto;
+}
 </style>

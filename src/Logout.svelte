@@ -19,7 +19,7 @@
     top: 2.5rem;
     right: 3rem;
     border-radius: 10px;
-    border: 4px solid white;  
+    border: 2px solid white;  
     color: white;
     cursor: pointer;
 
