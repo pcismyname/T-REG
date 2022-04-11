@@ -21,6 +21,26 @@
 </script>
 
 <body> 
+    function submit(event) {
+        if (event.key === 'Enter') {
+            isLogin();
+        }
+    }
+
+</script>
+
+<body> 
+    <div class="center">
+        <h1>Enrollment Login</h1>
+
+        <div>
+            <label for="UserId">User ID</label>
+            <input bind:value={username} on:keydown={submit}>
+        </div>
+        <div>
+            <label for="Password">Password</label>
+            <input type="password" bind:value={pin} on:keydown={submit} >
+        </div>
     
     <div class="center">
         
@@ -50,13 +70,13 @@
 
 
 <style>
-  body{color: white;}
-    
+    body{color: white;}
+
     button{color: #E4BAFF;
         border-radius: 10px;
         padding: 10px 100px;
         margin: 20px 0;}
-        
+
     input{background: none;
         border: 2px solid white;
         border-radius: 10px;
