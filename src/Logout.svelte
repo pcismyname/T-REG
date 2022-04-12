@@ -3,7 +3,7 @@
   
     function logout() {
       $islogin = false;
-      $mode = '';
+      $mode = 'home';
     }
   </script>
 
