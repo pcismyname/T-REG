@@ -12,7 +12,10 @@
   </script>
   
 
-<h1>ลงทะเบียนเรียน</h1>
+<h1>ลงทะเบียนเรียน</h1> 
+<button on:click={()=>$mode='menu'} class="back">BACK TO MENU</button>
+
+<div class = "tableConfig">
 <table class="main_table">
     <tr>
         <th>รหัสวิชา</th>
@@ -31,19 +34,21 @@
     {#if $display1 }
     <td colspan="4" transition:fade>
     <div class="sub_table" class:selected="{current === 'sf210'}">
-      <tr class="sub_row" >
-        <td> Section 760001 </td><td>Mon 9.30-12.30</td><td>Prof.Weerachai&nbsp&nbsp&nbsp&nbsp</td>
-        <td > 35/100 &nbsp&nbsp&nbsp</td><td><button   class="regist"> ลงทะเบียน </button></td>
+      
+      <tr >
+        <td> Section 760001 </td><td>Mon 9.30-12.30</td><td>Prof.Weerachai</td>
+        <td > 35/100</td><td><button   class="regist"> ลงทะเบียน </button></td>
       </tr>
-      <tr class="sub_row">
+      <tr>
         <td> Section 760001 </td><td>Mon 9.30-12.30</td><td>Prof.Weerachai</td>
         <td> 35/100 </td><td><button on:click="{() => current = 'check'}" class="regist">ลงทะเบียน</button></td>
       </tr>
-      <tr class="sub_row">
+      <tr>
         <td> Section 760001 </td><td>Mon 9.30-12.30</td><td>Prof.Weerachai</td>
         <td> 35/100 </td><td><button on:click="{() => current = 'check'}" class="regist">ลงทะเบียน</button></td>
       </tr>
     </div>
+    
   </td>
   {/if}
 
@@ -59,8 +64,8 @@
     <td colspan="4" transition:fade>
       <div class="sub_table" class:selected="{current === 'sf220'}">
         <tr class="sub_row" >
-          <td> Section 760001 </td><td>Mon 9.30-12.30</td><td>Prof.Weerachai&nbsp&nbsp&nbsp&nbsp</td>
-          <td > 35/100 &nbsp&nbsp&nbsp</td><td><button  class="regist"> ลงทะเบียน </button></td>
+          <td> Section 760001 </td><td>Mon 9.30-12.30</td><td>Prof.Weerachai</td>
+          <td > 35/100</td><td><button  class="regist"> ลงทะเบียน </button></td>
         </tr>
         <tr class="sub_row">
           <td> Section 740001 </td><td>Tue 13.30-16.30</td><td>Prof.Phonsapsin</td>
@@ -84,8 +89,8 @@
     <td colspan="4" transition:fade>
       <div class="sub_table" >
         <tr class="sub_row">
-          <td> Section 760001 </td><td>Mon 9.30-12.30</td><td>Prof.Weerachai&nbsp&nbsp&nbsp&nbsp</td>
-          <td > 35/100 &nbsp&nbsp&nbsp</td><td><button  class="regist"> ลงทะเบียน </button></td>
+          <td> Section 760001 </td><td>Mon 9.30-12.30</td><td>Prof.Weerachai</td>
+          <td > 35/100</td><td><button  class="regist"> ลงทะเบียน </button></td>
         </tr>
         <tr class="sub_row">
           <td> Section 740001 </td><td>Tue 13.30-16.30</td><td>Prof.Phonsapsin</td>
@@ -100,19 +105,30 @@
 {/if}
 
 </table>
+<button on:click={()=>$mode='menu'}  class="complete">ยืนยันการลงทะเบียน</button>
+</div >
 
 
-<button on:click={()=>$mode='menu'} class="back">BACK TO MENU</button>
 
 
 
 <style>
+    .tableConfig{
+      padding: 20px;
+      border: 4px solid white;
+      border-radius: 20px;
+      width: 75%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
     .main_table { 
         border-collapse: collapse; 
         margin-left: auto;
         margin-right: auto;
-        border: 10px;
-        border-radius: 20px;
+        font-size: 18px;
+        color: white;
+        width: 100%;
         
     }
 
@@ -124,16 +140,78 @@
       position: relative;
       background: white;
       border-radius: 10px;
+      color: darkblue;
+      width: 85%;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 40px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      text-align: center;
     }
+
+    th{
+      padding-top: 10px;
+      padding-bottom: 10px;
+      text-align: center;
+    }
+    
+    td{
+      text-align: center;
+      padding-left: 22px;
+      padding-right: 22px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+  
 
     .regist{
       background: #E4BAFF;
       border: none;
       border-radius: 15px;
       color: white;
+      width: 160px;
     }
-    .back {
+    
+    h1{
+      margin-left: 100px;
+      color: white;
+      padding: 20px;
     }
    
+    .back {
+        background: rgba(255, 255, 255, 0);
+        width: 10rem;
+        height: 3rem;
+        position: absolute;
+        top: 28%;
+        right: 5%;
+        transform: translate(-50%, -70%);
+        border-radius: 10px;
+        border: 4px solid white;  
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        cursor: pointer;
+    }
+
+    .complete{
+      background: rgba(255, 255, 255, 0);
+        width: 15rem;
+        height: 4rem;
+        border-radius: 10px;
+        border: 4px solid white;  
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        cursor: pointer;
+        margin-top:30px;
+        margin-left: 412px;
+        
+        
+        
+    }
+
+    
+    
    
 </style>
