@@ -8,10 +8,6 @@
 	import Regist from './Regist.svelte';
 	import Home from './Home.svelte';
 	
-	function home() {
-      $islogin = false;
-      $mode = '';
-    }
 </script>	
 
 
@@ -19,27 +15,27 @@
 	<nav class="top">
 		<img class="logo" src="img\logo.png" alt="">
 			<div class="nav_lists">		
-				<button on:click={home} class="nav_item">Home</button>
-				<button on:click={home} class="nav_item">Contact Us</button>
-				<button on:click={home} class="nav_item">Help</button>
+				<button on:click={()=>$mode='home'} class="nav_item">Home</button>
+				<button on:click={()=>$mode='home'} class="nav_item">Contact Us</button>
+				<button on:click={()=>$mode='home'} class="nav_item">Help</button>
 			</div>
 		</nav>
-	
-	<Home/>
-	<Sign/>
-	{#if $mode == 'signin'}
-	<Login/>
-	<Sign/>
-	{/if}
-	{#if $islogin}
-		{#if $mode == 'menu'}
-			<Menu/>
-		{:else if $mode == 'regist'}
-			<Regist/>
-		{:else if $mode == 'complete'}
-			<Complete/>
-		{/if}
-	<Logout/>	
+
+	{#if $mode == 'home'}
+		<Home/>
+		<Sign/>
+	{:else if $mode == 'signin'}
+		<Login/>
+		<Sign/>
+	{:else if $islogin}
+			{#if $mode == 'menu'}
+				<Menu/>
+			{:else if $mode == 'regist'}
+				<Regist/>
+			{:else if $mode == 'complete'}
+				<Complete/>
+			{/if}
+		<Logout/>	
 	{/if}
 </body>
 

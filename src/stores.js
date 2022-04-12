@@ -7,6 +7,6 @@ let data = {'0000':{name :'Chidsanuphong',surename: 'Pengchai',number: '64107420
 
 export const accounts = writable(data);
 export const islogin = writable(false);
-export const mode = writable('');
+export const mode = writable('home');
 export const account = writable('');
             
