@@ -1,21 +1,23 @@
 <script>
-  import { account,accounts,mode, store_q } from './stores.js';
+  import { courses,mode, temp } from './stores.js'
   import { createToggle } from "./toggle.js"
-  import { fade } from 'svelte/transition';
+  import { fade } from 'svelte/transition'
   import Toggle from './Toggle.svelte'
+import { bind } from 'svelte/internal';
 
-  let current = '';
   let q_sf210 = 100;
   let q_sf220 = 100;
   const display1 = createToggle(false);
   const display2 = createToggle(false);
   const display3 = createToggle(false);
-  $store_q = [];
 
-  let selectedCheckbox = [];
-	let selectedRadio;
+	let selectedRadio_1='';
+  let selectedRadio_2='';
+  let selectedRadio_3='';
 
-  function reg(){
+  function submit(){
+    $mode = 'menu';
+    $temp.push(selectedRadio_1,selectedRadio_2,selectedRadio_3);
 
   }
 </script>
@@ -42,31 +44,29 @@
 
     {#if $display1 }
     <td colspan="4" transition:fade>
-    <div class="sub_table" class:selected="{current === 'sf210'}">
-      
+    <div class="sub_table" >
       <tr >
         <td> Section 760001 </td><td>Mon 9.30-12.30</td><td>Prof.Weerachai</td><td > 35/100</td>
         <td> 
-          <Toggle type='radio' bind:group={selectedRadio} value={'Section 760001'} let:checked={checked}>
+          <Toggle type='radio' bind:group={selectedRadio_1} value={'sf210_1'} let:checked={checked}>
             <button  class="regist" class:registed={checked}>{checked ? 'ยกเลิก' : 'ลงทะเบียน'}</button>
           </Toggle></td>
       </tr>
       <tr>
         <td> Section 760002 </td><td>Mon 9.30-12.30</td><td>Prof.Weerachai</td>
         <td> 35/100 </td><td>
-          <Toggle type='radio' bind:group={selectedRadio} value={'Section 760002'} let:checked={checked}>
+          <Toggle type='radio' bind:group={selectedRadio_1} value={'sf210_2'} let:checked={checked}>
           <button class="regist"  class:registed={checked}>{checked ? 'ยกเลิก' : 'ลงทะเบียน'}</button>
         </Toggle></td>
       </tr>
       <tr>
         <td> Section 760003 </td><td>Mon 9.30-12.30</td><td>Prof.Weerachai</td>
         <td> 35/100 </td><td>
-          <Toggle type='radio' bind:group={selectedRadio} value={'Section 760003'} let:checked={checked}>
+          <Toggle type='radio' bind:group={selectedRadio_1} value={'sf210_3'} let:checked={checked}>
           <button  class="regist"  class:registed={checked}>{checked ? 'ยกเลิก' : 'ลงทะเบียน'}</button>
         </Toggle></td>
       </tr>
     </div>
-    
   </td>
   {/if}
 
@@ -80,18 +80,27 @@
 
     {#if $display2}
     <td colspan="4" transition:fade>
-      <div class="sub_table" class:selected="{current === 'sf220'}">
-        <tr class="sub_row" >
-          <td> Section 760001 </td><td>Mon 9.30-12.30</td><td>Prof.Weerachai</td>
-          <td > 35/100</td><td><button  class="regist"> ลงทะเบียน </button></td>
+      <div class="sub_table" >
+        <tr >
+          <td> Section 760001 </td><td>Mon 9.30-12.30</td><td>Prof.Weerachai</td><td > 35/100</td>
+          <td> 
+            <Toggle type='radio' bind:group={selectedRadio_2} value={'sf220_1'} let:checked={checked}>
+              <button  class="regist" class:registed={checked}>{checked ? 'ยกเลิก' : 'ลงทะเบียน'}</button>
+            </Toggle></td>
         </tr>
-        <tr class="sub_row">
-          <td> Section 740001 </td><td>Tue 13.30-16.30</td><td>Prof.Phonsapsin</td>
-          <td> 35/100 </td><td><button class="regist">ลงทะเบียน</button></td>
+        <tr>
+          <td> Section 760002 </td><td>Mon 9.30-12.30</td><td>Prof.Weerachai</td>
+          <td> 35/100 </td><td>
+            <Toggle type='radio' bind:group={selectedRadio_2} value={'sf220_2'} let:checked={checked}>
+            <button class="regist"  class:registed={checked}>{checked ? 'ยกเลิก' : 'ลงทะเบียน'}</button>
+          </Toggle></td>
         </tr>
-        <tr class="sub_row">
-          <td> Section 760001 </td><td>Mon 9.30-12.30</td><td>Prof.Tawan</td>
-          <td> 21/100 </td><td><button class="regist">ลงทะเบียน</button></td>
+        <tr>
+          <td> Section 760003 </td><td>Mon 9.30-12.30</td><td>Prof.Weerachai</td>
+          <td> 35/100 </td><td>
+            <Toggle type='radio' bind:group={selectedRadio_2} value={'sf220_3'} let:checked={checked}>
+            <button  class="regist"  class:registed={checked}>{checked ? 'ยกเลิก' : 'ลงทะเบียน'}</button>
+          </Toggle></td>
         </tr>
       </div>
     </td>
@@ -121,9 +130,9 @@
       </div>
   </td>
 {/if}
-
 </table>
-<button on:click={()=>$mode='menu'} class="complete">ยืนยันการลงทะเบียน</button>
+
+<button on:click={submit} class="complete">ยืนยันการลงทะเบียน</button>
 </div >
 
 
@@ -236,9 +245,4 @@
         margin-top:30px;
         margin-left: 412px;
     }
-
-
-    
-    
-   
 </style>

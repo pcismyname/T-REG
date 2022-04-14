@@ -6,16 +6,16 @@ let data = {'0000':{name :'Chidsanuphong',surename: 'Pengchai',number: '64107420
             '3':{name :'Sathit',surename: 'Juntanasatan',number: '3', pin: '3',course : []}};
 
 
-let data_base = {'sf210_1':{code:'sf210',sec:'760001',name:'Weerachai',surename:'Antonsorn',time:'13.00-14.00',day:'Monday'}};
+let data_base = {'sf210_1':{quata:100,code:'sf210',sec:'760001',name:'Weerachai',surename:'Antonsorn',time:'13.00-14.00',day:'Monday'}};
 
 
-export const course = writable(data_base);
+export const courses = writable(data_base);
 export const accounts = writable(data);
 export const islogin = writable(false);
 export const mode = writable('home');
 export const account = writable('');
 export const store_q = writable({});
-export const temp = writable({});
+export const temp = writable([]);
 
 
             
