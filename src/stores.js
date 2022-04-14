@@ -9,4 +9,6 @@ export const accounts = writable(data);
 export const islogin = writable(false);
 export const mode = writable('home');
 export const account = writable('');
+export const store_q = writable({});
+
             
