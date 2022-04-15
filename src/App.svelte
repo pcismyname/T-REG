@@ -7,7 +7,10 @@
 	import Menu  from './Menu.svelte';
 	import Regist from './Regist.svelte';
 	import Home from './Home.svelte';
+	import Confirm from './Confirm.svelte';
 	
+
+
 </script>	
 
 
@@ -20,7 +23,14 @@
 				<button on:click={()=>$mode='home'} class="nav_item">Help</button>
 			</div>
 		</nav>
-
+	{#if $mode == 'home'}
+		<Regist/>
+	{:else if $mode == 'complete'}
+		<Complete/>
+	{:else if $mode == 'confirm'}
+		<Confirm/>
+	{/if}
+		<!--
 	{#if $mode == 'home'}
 		<Home/>
 		<Sign/>
@@ -37,6 +47,7 @@
 			{/if}
 		<Logout/>	
 	{/if}
+	-->
 </body>
 
 <style>

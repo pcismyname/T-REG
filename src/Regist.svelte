@@ -14,11 +14,10 @@
   let selectedRadio_3 = '';
 
   function submit(){
-    $mode = 'menu';
-    $temp.push(selectedRadio_1);
-    $temp.push(selectedRadio_2);
-    $temp.push(selectedRadio_3);
-
+    $mode = 'confirm';
+    $temp = [...$temp, selectedRadio_1];
+    $temp = [...$temp, selectedRadio_2];
+    $temp = [...$temp, selectedRadio_3];
   }
 </script>
   

@@ -4,7 +4,7 @@
 
  <img src="img/correct.png" alt="">
     <h1>ลงทะเบียนสำเร็จ</h1>
-    <button on:click={()=>$mode='menu'} class="back">BACK TO MENU</button>
+    <button on:click={()=>$mode='home'} class="back">BACK TO MENU</button>
 
 <style>
     img {

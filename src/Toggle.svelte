@@ -1,4 +1,5 @@
 <script>
+	import { courses } from './stores.js';
 	export let type = 'checkbox'
 	export let checked = false
 	export let group = ''

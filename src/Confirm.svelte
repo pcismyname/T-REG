@@ -1,11 +1,11 @@
 <script>
   import { account,accounts,courses,mode, temp } from './stores.js'
 
-  let data = JSON.stringify($temp)
-
   function submit(){
-    $accounts[account].course = $temp
-    $mode = 'menu'
+    $mode = 'complete';
+    $accounts['0000'].course = [...$temp];
+    $temp = [];
+    
   }
 
 </script>
@@ -14,7 +14,6 @@
 
 
 <h1>ยืนยันการลงทะเบียน</h1>
-<button on:click={()=>$mode='home'} class="back">BACK TO MENU</button>
 
 
 <table class="main_table">
@@ -37,12 +36,11 @@
     {/if}
     {/each}
 </table>
-
-
-
-
-
-
+{$temp}
+account
+{$accounts['0000'].course}
+<button on:click={submit} >ยืนยันการลงทะเบียน</button>
+<button on:click={()=>$mode='home'}>BACK TO MENU</button>
 
 <style>
  
