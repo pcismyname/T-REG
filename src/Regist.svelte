@@ -1,23 +1,23 @@
 <script>
-  import { courses,mode, temp } from './stores.js'
+  import { courses ,mode, temp } from './stores.js'
   import { createToggle } from "./toggle.js"
   import { fade } from 'svelte/transition'
   import Toggle from './Toggle.svelte'
-import { bind } from 'svelte/internal';
 
-  let q_sf210 = 100;
-  let q_sf220 = 100;
+  
   const display1 = createToggle(false);
   const display2 = createToggle(false);
   const display3 = createToggle(false);
 
-	let selectedRadio_1='';
-  let selectedRadio_2='';
-  let selectedRadio_3='';
+	let selectedRadio_1 = '';
+  let selectedRadio_2 = '';
+  let selectedRadio_3 = '';
 
   function submit(){
     $mode = 'menu';
-    $temp.push(selectedRadio_1,selectedRadio_2,selectedRadio_3);
+    $temp.push(selectedRadio_1);
+    $temp.push(selectedRadio_2);
+    $temp.push(selectedRadio_3);
 
   }
 </script>
@@ -38,7 +38,7 @@ import { bind } from 'svelte/internal';
     <tr class="main_row"  on:click={display1.toggle}>
       <td>SF210</td>
       <td>PROGRAMMING SKILL DEVELOPEMENT 1 </td>
-      <td>{q_sf210}</td>
+      <td>{$courses['sf210_1'].quata + $courses['sf210_2'].quata + $courses['sf210_3'].quata}</td>
       <td>3.0</td>
     </tr>
 
@@ -46,7 +46,7 @@ import { bind } from 'svelte/internal';
     <td colspan="4" transition:fade>
     <div class="sub_table" >
       <tr >
-        <td> Section 760001 </td><td>Mon 9.30-12.30</td><td>Prof.Weerachai</td><td > 35/100</td>
+        <td> Section 760001 </td><td>Mon 9.30-12.30</td><td>Prof.Weerachai</td><td > {$courses['sf210_1'].quata}/40</td>
         <td> 
           <Toggle type='radio' bind:group={selectedRadio_1} value={'sf210_1'} let:checked={checked}>
             <button  class="regist" class:registed={checked}>{checked ? 'ยกเลิก' : 'ลงทะเบียน'}</button>
@@ -54,14 +54,14 @@ import { bind } from 'svelte/internal';
       </tr>
       <tr>
         <td> Section 760002 </td><td>Mon 9.30-12.30</td><td>Prof.Weerachai</td>
-        <td> 35/100 </td><td>
+        <td> {$courses['sf210_2'].quata}/40 </td><td>
           <Toggle type='radio' bind:group={selectedRadio_1} value={'sf210_2'} let:checked={checked}>
           <button class="regist"  class:registed={checked}>{checked ? 'ยกเลิก' : 'ลงทะเบียน'}</button>
         </Toggle></td>
       </tr>
       <tr>
         <td> Section 760003 </td><td>Mon 9.30-12.30</td><td>Prof.Weerachai</td>
-        <td> 35/100 </td><td>
+        <td> {$courses['sf210_3'].quata}/40 </td><td>
           <Toggle type='radio' bind:group={selectedRadio_1} value={'sf210_3'} let:checked={checked}>
           <button  class="regist"  class:registed={checked}>{checked ? 'ยกเลิก' : 'ลงทะเบียน'}</button>
         </Toggle></td>
