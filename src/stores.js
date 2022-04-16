@@ -6,12 +6,15 @@ let data = {'0000':{name :'Chidsanuphong',surename: 'Pengchai',number: '64107420
             '3':{name :'Sathit',surename: 'Juntanasatan',number: '3', pin: '3',course : []}};
 
 
-let data_base = {'sf210_1':{quata:40,code:'sf210',sub:'Programmin skill development 1',sec:'760001',name:'Weerachai',surename:'Antonsorn',time:'13.00-14.00',day:'Monday', credit:'3'},
+let data_base = {'sf210_1':{quata:0,code:'sf210',sub:'Programmin skill development 1',sec:'760001',name:'Weerachai',surename:'Antonsorn',time:'13.00-14.00',day:'Monday', credit:'3'},
                 'sf210_2':{quata:40,code:'sf210',sub:'Programmin skill development 1',sec:'760002',name:'Jordan',surename:'Peterson',time:'09.00-12.00',day:'Tueday', credit:'3'},
-                'sf210_3':{quata:40,code:'sf210',sub:'Programmin skill development 1',sec:'760003',name:'Ben',surename:'Shapiro',time:'13.00-14.00',day:'Wednesday', credit:'3'},
+                'sf210_3':{quata:1,code:'sf210',sub:'Programmin skill development 1',sec:'760003',name:'Ben',surename:'Shapiro',time:'13.00-14.00',day:'Wednesday', credit:'3'},
             'sf220_1':{quata:100,code:'sf220',sub:'Introduction to software engnieer',sec:'760004',name:'Weerachai',surename:'Antonsorn',time:'13.00-14.00',day:'Thursday',credit:'3'},
             'sf220_2':{quata:100,code:'sf220',sub:'Introduction to software engnieer',sec:'760005',name:'Ben',surename:'Shapiro',time:'13.00-14.00',day:'Friday',credit:'3'},
-            'sf220_3':{quata:100,code:'sf220',sub:'Introduction to software engnieer',sec:'760006',name:'Weerachai',surename:'Antonsorn',time:'13.00-14.00',day:'Saturday',credit:'3'},};
+            'sf220_3':{quata:100,code:'sf220',sub:'Introduction to software engnieer',sec:'760006',name:'Weerachai',surename:'Antonsorn',time:'13.00-14.00',day:'Saturday',credit:'3'},
+            'tu100_1':{quata:100,code:'tu100',sub:'Civic Engagment',sec:'760007',name:'Weerachai',surename:'Antonsorn',time:'13.00-14.00',day:'Sunday',credit:'3'},
+            'tu100_2':{quata:100,code:'tu100',sub:'Civic Engagment',sec:'760008',name:'Ben',surename:'Shapiro',time:'13.00-14.00',day:'Monday',credit:'3'},
+            'tu100_3':{quata:100,code:'tu100',sub:'Civic Engagment',sec:'760009',name:'Weerachai',surename:'Antonsorn',time:'13.00-16.00',day:'Tuesday',credit:'3'},};
 
 
 export const courses = writable(data_base);

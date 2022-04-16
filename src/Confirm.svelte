@@ -1,6 +1,7 @@
 <script>
   import { account,accounts,courses,mode, temp } from './stores.js'
 
+
   function submit(){
     $mode = 'complete';
     $accounts[$account].course = [...$temp];
@@ -28,15 +29,14 @@
         <td>{$courses[item].credit}</td>
         <td>{$courses[item].day}</td>
         <td>{$courses[item].time}</td>
+        {$courses[item].quata -= 1}
       </tr>
     {/if}
     {/each}
 </table>
-{$temp}
-account
-{$accounts[$account].course}
+
 <button on:click={submit} >ยืนยันการลงทะเบียน</button>
-<button on:click={()=>$mode='home'}>BACK TO MENU</button>
+<button on:click={()=>$mode='regist'}>BACK TO MENU</button>
 
 <style>
     .main_table { 

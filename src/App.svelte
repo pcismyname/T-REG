@@ -8,6 +8,7 @@
 	import Regist from './Regist.svelte';
 	import Home from './Home.svelte';
 	import Confirm from './Confirm.svelte';
+	import Result from './Result.svelte';
 	
 
 
@@ -39,10 +40,11 @@
 				<Complete/>
 			{:else if $mode == 'confirm'}
 				<Confirm/>
+			{:else if $mode == 'result'}
+				<Result/>
 			{/if}
 		<Logout/>	
 	{/if}
-	-->
 </body>
 
 <style>

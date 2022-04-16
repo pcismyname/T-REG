@@ -1,5 +1,5 @@
 <script>
-	import { courses } from './stores.js';
+	import { temp,courses } from './stores.js';
 	export let type = 'checkbox'
 	export let checked = false
 	export let group = ''
@@ -7,51 +7,40 @@
 
 
 	$: type === 'radio' && updateRadio(group, value)
-	$: type === 'checkbox' && group && updateChekbox(group, value)
-	$: type === 'checkbox' && group && updateGroup(checked, value)
+
 	
 	function updateRadio(group, value) {
 		checked = group === value
 	}	
-	
-	function updateChekbox(group, value) {
-		checked = group.indexOf(value) >= 0
+
+	function no_quata(){
+			alert('no quata left!')
 	}
+
 	
-	function updateGroup(checked, value) {
-		const index = group.indexOf(value)
-		if (checked) {
-			if (index < 0) {
-				group.push(value)
-				group = group
-			}
-		} else {
-			if (index >= 0) {
-				group.splice(index, 1)
-				group = group
-			}
-		}
-	}
 </script>
 
 <!-- svelte-ignore a11y-label-has-associated-control -->
 <label>
 	{#if type === 'radio'}
-		<input
+		{#if $courses[value].quata==0 }
+			<input
 			type="radio"
 			class="collapsed"
-			on:click
-			bind:group={group}
+			on:click = {no_quata}
 			value={value}
 		/>
-	{:else}
-		<input
-			type="checkbox"
-			class="collapsed"
-			on:click
-			bind:checked={checked}
-			value={value}
-		/>
+		{:else}
+			<input
+				type="radio"
+				class="collapsed"
+				on:clicks
+				bind:group={group}
+				value={value}
+			/>
+		{/if}
+
+		
 	{/if}
   <slot checked={checked}></slot>
 </label>
