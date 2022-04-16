@@ -52,21 +52,25 @@
     <td colspan="4" transition:fade>
     <div class="sub_table" >
       <tr >
-        <td> Section 760001 </td><td>Mon 9.30-12.30</td><td>Prof.Weerachai</td><td > {$courses['sf210_1'].quata}/40</td>
+        <td>Section {$courses['sf210_1'].sec} </td><td>{$courses['sf210_1'].day} {$courses['sf210_1'].time}</td>
+        <td>{$courses['sf210_1'].name} {$courses['sf210_1'].surename}
+        </td><td >{$courses['sf210_1'].quata}/40</td>
         <td> 
           <Toggle type='radio' bind:group={selectedRadio_1} value={'sf210_1'} let:checked={checked}>
             <button  class="regist" class:registed={checked}>{checked ? 'ยกเลิก' : 'ลงทะเบียน'}</button>
           </Toggle></td>
       </tr>
       <tr>
-        <td> Section 760002 </td><td>Mon 9.30-12.30</td><td>Prof.Weerachai</td>
+        <td>Section {$courses['sf210_2'].sec} </td><td>{$courses['sf210_2'].day} {$courses['sf210_2'].time}</td>
+        <td>{$courses['sf210_2'].name} {$courses['sf210_2'].surename}</td>
         <td> {$courses['sf210_2'].quata}/40 </td><td>
           <Toggle type='radio' bind:group={selectedRadio_1} value={'sf210_2'} let:checked={checked}>
           <button class="regist"  class:registed={checked}>{checked ? 'ยกเลิก' : 'ลงทะเบียน'}</button>
         </Toggle></td>
       </tr>
       <tr>
-        <td> Section 760003 </td><td>Mon 9.30-12.30</td><td>Prof.Weerachai</td>
+        <td>Section {$courses['sf210_3'].sec} </td><td>{$courses['sf210_3'].day} {$courses['sf210_3'].time}</td>
+        <td>{$courses['sf210_3'].name} {$courses['sf210_3'].surename}</td>
         <td> {$courses['sf210_3'].quata}/40 </td><td>
           <Toggle type='radio' bind:group={selectedRadio_1} value={'sf210_3'} let:checked={checked}>
           <button  class="regist"  class:registed={checked}>{checked ? 'ยกเลิก' : 'ลงทะเบียน'}</button>
@@ -80,7 +84,7 @@
     <tr  class="main_row" on:click={display2.toggle}>
       <td>SF220</td>
       <td>INTRODUCTION TO SOFTWARE ENGINEER</td>
-      <td>100</td>
+      <td>{$courses['sf220_1'].quata + $courses['sf220_2'].quata + $courses['sf220_3'].quata}</td>
       <td>3.0</td>
     </tr>
 
@@ -88,22 +92,25 @@
     <td colspan="4" transition:fade>
       <div class="sub_table" >
         <tr >
-          <td> Section 760001 </td><td>Mon 9.30-12.30</td><td>Prof.Weerachai</td><td > 35/100</td>
+          <td>Section<br>{$courses['sf220_1'].sec} </td><td>{$courses['sf220_1'].day}<br>{$courses['sf220_1'].time}</td>
+          <td>{$courses['sf220_1'].name} {$courses['sf220_1'].surename}</td><td > {$courses['sf220_1'].quata}/50</td>
           <td> 
             <Toggle type='radio' bind:group={selectedRadio_2} value={'sf220_1'} let:checked={checked}>
               <button  class="regist" class:registed={checked}>{checked ? 'ยกเลิก' : 'ลงทะเบียน'}</button>
             </Toggle></td>
         </tr>
         <tr>
-          <td> Section 760002 </td><td>Mon 9.30-12.30</td><td>Prof.Weerachai</td>
-          <td> 35/100 </td><td>
+          <td>Section<br>{$courses['sf220_2'].sec} </td><td>{$courses['sf220_2'].day}<br>{$courses['sf220_2'].time}</td>
+          <td>{$courses['sf220_2'].name} {$courses['sf220_2'].surename}</td>
+          <td>  {$courses['sf220_2'].quata}/50 </td><td>
             <Toggle type='radio' bind:group={selectedRadio_2} value={'sf220_2'} let:checked={checked}>
             <button class="regist"  class:registed={checked}>{checked ? 'ยกเลิก' : 'ลงทะเบียน'}</button>
           </Toggle></td>
         </tr>
         <tr>
-          <td> Section 760003 </td><td>Mon 9.30-12.30</td><td>Prof.Weerachai</td>
-          <td> 35/100 </td><td>
+          <td>Section<br>{$courses['sf220_3'].sec} </td><td>{$courses['sf220_3'].day}<br>{$courses['sf220_3'].time}</td>
+          <td>{$courses['sf220_3'].name} {$courses['sf220_3'].surename}</td>
+          <td>{$courses['sf220_3'].quata}/50</td><td>
             <Toggle type='radio' bind:group={selectedRadio_2} value={'sf220_3'} let:checked={checked}>
             <button  class="regist"  class:registed={checked}>{checked ? 'ยกเลิก' : 'ลงทะเบียน'}</button>
           </Toggle></td>
@@ -122,22 +129,25 @@
     <td colspan="4" transition:fade>
       <div class="sub_table" >
         <tr >
-          <td> Section 760001 </td><td>Mon 9.30-12.30</td><td>Prof.Weerachai</td><td > 35/100</td>
+          <td>Section<br>{$courses['tu100_1'].sec}</td><td>{$courses['tu100_1'].day}<br>{$courses['tu100_1'].time}</td>
+          <td>{$courses['tu100_1'].name} {$courses['tu100_1'].surename}</td><td > {$courses['tu100_1'].quata}/60</td>
           <td> 
             <Toggle type='radio' bind:group={selectedRadio_3} value={'tu100_1'} let:checked={checked}>
               <button  class="regist" class:registed={checked}>{checked ? 'ยกเลิก' : 'ลงทะเบียน'}</button>
             </Toggle></td>
         </tr>
         <tr>
-          <td> Section 760002 </td><td>Mon 9.30-12.30</td><td>Prof.Weerachai</td>
-          <td> 35/100 </td><td>
+          <td>Section<br>{$courses['tu100_2'].sec}</td><td>{$courses['tu100_2'].day}<br>{$courses['tu100_2'].time}</td>
+          <td>{$courses['tu100_2'].name} {$courses['tu100_2'].surename}</td><td > {$courses['tu100_2'].quata}/60</td>
+          <td>
             <Toggle type='radio' bind:group={selectedRadio_3} value={'tu100_2'} let:checked={checked}>
             <button class="regist"  class:registed={checked}>{checked ? 'ยกเลิก' : 'ลงทะเบียน'}</button>
           </Toggle></td>
         </tr>
         <tr>
-          <td> Section 760003 </td><td>Mon 9.30-12.30</td><td>Prof.Weerachai</td>
-          <td> 35/100 </td><td>
+          <td>Section<br>{$courses['tu100_3'].sec}</td><td>{$courses['tu100_3'].day}<br>{$courses['tu100_3'].time}</td>
+          <td>{$courses['tu100_3'].name} {$courses['tu100_3'].surename}</td><td > {$courses['tu100_3'].quata}/60</td>
+          <td>
             <Toggle type='radio' bind:group={selectedRadio_3} value={'tu100_3'} let:checked={checked}>
             <button  class="regist"  class:registed={checked}>{checked ? 'ยกเลิก' : 'ลงทะเบียน'}</button>
           </Toggle></td>
@@ -199,8 +209,8 @@
     
     td{
       text-align: center;
-      padding-left: 22px;
-      padding-right: 22px;
+      padding-left: 29px;
+      padding-right: 39px;
       padding-top: 5px;
       padding-bottom: 5px;
     }
