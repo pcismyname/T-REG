@@ -23,14 +23,7 @@
 				<button on:click={()=>$mode='home'} class="nav_item">Help</button>
 			</div>
 		</nav>
-	{#if $mode == 'home'}
-		<Regist/>
-	{:else if $mode == 'complete'}
-		<Complete/>
-	{:else if $mode == 'confirm'}
-		<Confirm/>
-	{/if}
-		<!--
+	
 	{#if $mode == 'home'}
 		<Home/>
 		<Sign/>
@@ -44,6 +37,8 @@
 				<Regist/>
 			{:else if $mode == 'complete'}
 				<Complete/>
+			{:else if $mode == 'confirm'}
+				<Confirm/>
 			{/if}
 		<Logout/>	
 	{/if}

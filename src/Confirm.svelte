@@ -3,18 +3,14 @@
 
   function submit(){
     $mode = 'complete';
-    $accounts['0000'].course = [...$temp];
+    $accounts[$account].course = [...$temp];
     $temp = [];
     
   }
 
 </script>
 
-
-
-
 <h1>ยืนยันการลงทะเบียน</h1>
-
 
 <table class="main_table">
   <tr>
@@ -38,12 +34,11 @@
 </table>
 {$temp}
 account
-{$accounts['0000'].course}
+{$accounts[$account].course}
 <button on:click={submit} >ยืนยันการลงทะเบียน</button>
 <button on:click={()=>$mode='home'}>BACK TO MENU</button>
 
 <style>
- 
     .main_table { 
         border-collapse: collapse; 
         margin-left: auto;
@@ -51,7 +46,5 @@ account
         font-size: 18px;
         color: white;
         width: 100%;
-        
     }
-
 </style>
