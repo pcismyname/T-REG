@@ -13,6 +13,7 @@
 
 <style>
 .sign_out {
+    font-family: 'Itim', cursive;
     background: rgba(255, 255, 255, 0);
     display: flex;
     position: absolute;
@@ -26,6 +27,7 @@
 }
 
 .user{
+    font-family: 'Itim', cursive;
     color: white;
     display: flex;
     position: absolute;

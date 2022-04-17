@@ -18,10 +18,10 @@
 
 <style>
   :root {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-      
+    font-family: 'Itim', cursive;      
   }
   body {
+    font-family: 'Itim', cursive;
     text-align: center;
     padding: 1em;
     margin: 0 auto;

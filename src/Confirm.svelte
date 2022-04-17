@@ -10,7 +10,7 @@
   }
 
 </script>
-
+<body>
 <h1>ยืนยันการลงทะเบียน</h1>
 
 <div class="tableConfig">
@@ -39,10 +39,11 @@
 </div>
 
 <button on:click={submit} class ="submit">ยืนยันการลงทะเบียน</button>
-<button on:click={()=>$mode='regist'} class="back">BACK TO MENU</button>
+<button on:click={()=>$mode='regist'} class="back">BACK TO MENU</button></body>
 
 
 <style>
+  body{font-family: 'Itim', cursive;}
     h1{
       margin-left: 100px;
       color: white;

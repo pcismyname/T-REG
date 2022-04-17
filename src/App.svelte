@@ -48,7 +48,7 @@
 </body>
 
 <style>
-
+body{font-family: 'Itim', cursive;}
 :global(body) {
     background: linear-gradient(296.82deg, #E4BAFF 0%, #AEBAF8 100%),
     linear-gradient(0deg, #FFFFFF, #FFFFFF);

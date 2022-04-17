@@ -28,8 +28,8 @@
 
 </script>
 <!-- svelte-ignore non-top-level-reactive-declaration -->
-
-<h1>ลงทะเบียนเรียน</h1> 
+<body>
+  <h1>ลงทะเบียนเรียน</h1> 
 <button on:click={()=>$mode='menu'} class="back">BACK TO MENU</button>
 
 <div class = "tableConfig">
@@ -156,11 +156,14 @@
 
 <button on:click={submit} class="complete">ยืนยันการลงทะเบียน</button>
 </div >
+</body>
+
 
 
 
 
 <style>
+  body{font-family: 'Itim', cursive;}
     .tableConfig{
       padding: 20px;
       border: 5px solid white;

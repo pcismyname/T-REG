@@ -4,7 +4,7 @@
     var keys = Object.keys($courses)
 
 </script>
-
+<body>
 <h1>ผลการลงทะเบียน</h1>
 
 <div class="tableConfig">
@@ -34,10 +34,11 @@
     {/each}
   </table>
 </div>
-  <button on:click={()=>$mode='menu'} class="back">BACK TO MENU</button>
+  <button on:click={()=>$mode='menu'} class="back">BACK TO MENU</button></body>
 
 
 <style>
+  body{font-family: 'Itim', cursive;}
 
     h1{
       margin-left: 100px;

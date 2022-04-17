@@ -51,7 +51,8 @@
 
 
 <style>
-    body{color: white;}
+    body{color: white;
+        font-family: 'Itim', cursive;}
 
     h1{
         font-size: 45px;

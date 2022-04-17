@@ -19,6 +19,7 @@
         transform: translate(-50%, -50%)
     }
     h1{
+        font-family: 'Itim', cursive;
         margin-top: 20rem;
         color: white;
         display: flex;
@@ -40,7 +41,7 @@
         border-radius: 10px;
         border: 4px solid white;  
         color: white;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Itim', cursive;
         cursor: pointer;
     }
   

@@ -23,6 +23,7 @@
       
   }
   body {
+    font-family: 'Itim', cursive;
     text-align: center;
     padding: 1em;
     margin: 0 auto;
