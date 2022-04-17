@@ -51,8 +51,8 @@
     {#if $display1 }
     <td colspan="4" transition:fade>
     <div class="sub_table" >
-      <tr >
-        <td>Section {$courses['sf210_1'].sec} </td><td>{$courses['sf210_1'].day} {$courses['sf210_1'].time}</td>
+      <tr>
+        <td>Section {$courses['sf210_1'].sec}</td><td>{$courses['sf210_1'].day} {$courses['sf210_1'].time}</td>
         <td>{$courses['sf210_1'].name} {$courses['sf210_1'].surename}
         </td><td >{$courses['sf210_1'].quata}/40</td>
         <td> 
@@ -170,8 +170,7 @@
       border-radius: 50px;
       width: 75%;
       margin-left: auto;
-      margin-right: auto;
-      
+      margin-right: auto; 
     }
 
     .main_table { 
@@ -181,13 +180,8 @@
       margin-right: auto;
       font-size: 18px;
       color: white;
-      width: 100%;
-        
-        
+      width: 100%;  
     }
-
-    
-    
 
     .sub_table{
       position: relative;
@@ -207,8 +201,7 @@
       color: rgba(101, 99, 186, 1);
       padding-top: 10px;
       padding-bottom: 10px;
-      text-align: center;
-      
+      text-align: center;  
     }
     
     td{
@@ -237,7 +230,6 @@
       width: 160px;
       cursor: pointer;
     }
-
     
     h1{
       margin-left: 100px;
@@ -270,7 +262,7 @@
         font-family: Arial, Helvetica, sans-serif;
         font-size: 20px;
         cursor: pointer;
-        margin-top:30px;
+        margin-top:20px;
         margin-left: 412px;
     }
 </style>

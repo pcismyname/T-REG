@@ -65,10 +65,11 @@
   }
   .mascothome{
     position: absolute;
-    width: 550px;
-    height: 550px;
-    left: 1000px;
+    width: 450px;
+    height: 450px;
+    left: 800px;
     top: 0px;
+
   }
   
 </style>

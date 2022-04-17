@@ -28,14 +28,14 @@
 
 <body> 
     <div class="center">
-        <h2>Enrollment Login</h2>
+        <h1>Enrollment Login</h1>
 
         <div>
-            <div><label for="UserId">User ID</label></div> 
+            <div class="word"><label for="UserId">User ID</label></div> 
             <input bind:value={username} on:keydown={submit}>
         </div>
         <div>
-            <div><label for="Password">Password</label></div>
+            <div class="word"><label for="Password">Password</label></div>
             <input type="password" bind:value={pin} on:keydown={submit} >
         </div>
         
@@ -53,19 +53,26 @@
 <style>
     body{color: white;}
 
+    h1{
+        font-size: 45px;
+    }
+
     button{color: #E4BAFF;
         border-radius: 20px;
         padding: 10px 95px;
-        margin: 20px 0;}
+        margin: 20px 0;
+        font-size: 20px;
+        width: 300px;}
 
     input{background: none;
-        border: 2px solid white;
+        border: 4px solid white;
         border-radius: 20px;
         padding: 10px 25px;
-        margin: 5px 0;}
+        margin: 10px 0;
+        width: 300px;}
 
-    .center{ width: 550px;
-        height: 400px;
+    .center{ width: 750px;
+        height: 500px;
         border: 4px solid white;
         border-radius: 50px;
         padding: 50px 40px;
@@ -74,13 +81,17 @@
     }
     .photo{ 
         position: relative;
-        top: -351px;
-        left: 320px;
+        top: -412px;
+        left: 469px;
         background-size: cover;
-        height: 400px;
+        height: 500px;
         border-radius: 50px;
         display: inline-block;
 }
+
+    .word{
+        font-size: 20px;
+    }
     
     
 </style>
