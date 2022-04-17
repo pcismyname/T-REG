@@ -183,6 +183,10 @@
       width: 100%;  
     }
 
+    .main_row {
+      cursor: pointer;
+    }
+
     .sub_table{
       position: relative;
       background: white;
