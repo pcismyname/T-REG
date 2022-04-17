@@ -51,7 +51,7 @@
     padding: 10px 20px;
     width: 17rem;
     border : 0 px ;
-    border-radius: 15px;
+    border-radius: 20px;
     border-color:white;
     background : white;
     margin: 5px;
@@ -70,7 +70,7 @@
     padding: 10px 20px;
     width: 17rem;
     border : 0 px ;
-    border-radius: 15px;
+    border-radius: 20px;
     border-color:rgba(145, 151, 214, 1);
     background : rgba(145, 151, 214, 1);
     margin: 5px;

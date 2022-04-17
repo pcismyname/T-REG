@@ -54,20 +54,20 @@
     body{color: white;}
 
     button{color: #E4BAFF;
-        border-radius: 10px;
+        border-radius: 20px;
         padding: 10px 95px;
         margin: 20px 0;}
 
     input{background: none;
         border: 2px solid white;
-        border-radius: 10px;
+        border-radius: 20px;
         padding: 10px 25px;
         margin: 5px 0;}
 
     .center{ width: 550px;
         height: 400px;
         border: 4px solid white;
-        border-radius: 20px;
+        border-radius: 50px;
         padding: 50px 40px;
         margin-left: auto;
         margin-right: auto;
@@ -78,7 +78,7 @@
         left: 320px;
         background-size: cover;
         height: 400px;
-        border-radius: 25px;
+        border-radius: 50px;
         display: inline-block;
 }
     
