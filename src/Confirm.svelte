@@ -21,7 +21,6 @@
     <th>หน่วยกิต</th>
     <th>วัน</th>
     <th>เวลา</th>
-    <th>ที่นั่งคงเหลือ</th>
 </tr>
   {#each $temp as item}
     {#if item != ''}
@@ -31,7 +30,6 @@
         <td>{$courses[item].credit}</td>
         <td>{$courses[item].day}</td>
         <td>{$courses[item].time}</td>
-        <td>{$courses[item].quata -= 1}</td>
       </tr>
     {/if}
     {/each}
