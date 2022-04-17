@@ -9,7 +9,7 @@
   <div class="user"> {$accounts[$account].name}</div>
   <span class = 'btn'>
     <button  on:click={()=>$mode='regist'} class = 'btn'>ลงทะเบียนเรียน</button><br>
-    <button  on:click={()=>$mode='complete'} class = 'btn'>ผลการลงทะเบียน</button><br>
+    <button  on:click={()=>$mode='result'} class = 'btn'>ผลการลงทะเบียน</button><br>
     <button  on:click={()=>$mode='complete'} class = 'btn'>คู่มือการลงทะเบียน</button><br>
     <button  on:click={()=>$mode='complete'} class = 'btn'> ตารางเรียน</button><br>
     <button  on:click={()=>$mode='complete'} class = 'btn5'>ถอนรายวิชา</button><br>

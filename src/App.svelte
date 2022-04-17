@@ -6,6 +6,11 @@
 	import Sign from './Sign.svelte';
 	import Menu  from './Menu.svelte';
 	import Regist from './Regist.svelte';
+	import Home from './Home.svelte';
+	import Confirm from './Confirm.svelte';
+	import Result from './Result.svelte';
+	
+
 
 </script>	
 
@@ -14,24 +19,31 @@
 	<nav class="top">
 		<img class="logo" src="img\logo.png" alt="">
 			<div class="nav_lists">		
-				<button class="nav_item">Home</button>
-				<button class="nav_item">Contact Us</button>
-				<button class="nav_item" >Help</button>
+				<button on:click={()=>$mode='home'} class="nav_item">Home</button>
+				<button on:click={()=>$mode='home'} class="nav_item">Contact Us</button>
+				<button on:click={()=>$mode='home'} class="nav_item">Help</button>
 			</div>
 		</nav>
 	
-	{#if !$islogin}
-	<Login />
-	<Sign/>
-	{:else}
-		{#if $mode == 'menu'}
-			<Menu/>
-		{:else if $mode == 'regist'}
-			<Regist/>
-		{:else if $mode == 'complete'}
-			<Complete/>
-	  {/if}
-	  <Logout/>
+	{#if $mode == 'home'}
+		<Home/>
+		<Sign/>
+	{:else if $mode == 'signin'}
+		<Login/>
+		<Sign/>
+	{:else if $islogin}
+			{#if $mode == 'menu'}
+				<Menu/>
+			{:else if $mode == 'regist'}
+				<Regist/>
+			{:else if $mode == 'complete'}
+				<Complete/>
+			{:else if $mode == 'confirm'}
+				<Confirm/>
+			{:else if $mode == 'result'}
+				<Result/>
+			{/if}
+		<Logout/>	
 	{/if}
 </body>
 
