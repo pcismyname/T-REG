@@ -12,8 +12,8 @@
 	const yTicks = [0, 50, 100, 150, 200];
 	const padding = { top: 20, right: 15, bottom: 20, left: 25 };
 
-	let width = 500;
-	let height = 200;
+	let width = 1000;
+	let height = 400;
 
 	function formatMobile(tick) {
 		return "'" + tick.toString().slice(-2);
@@ -45,7 +45,7 @@
 			{#each yTicks as tick}
 				<g class="tick tick-{tick}" transform="translate(0, {yScale(tick)})">
 					<line x2="100%"></line>
-					<text y="-4">{tick} {tick === 20 ? ' per 1,000 population' : ''}</text>
+					<text y="-4">{tick} </text>
 				</g>
 			{/each}
 		</g>
@@ -54,7 +54,7 @@
 		<g class="axis x-axis">
 			{#each points as point, i}
 				<g class="tick" transform="translate({xScale(i)},{height})">
-					<text x="{barWidth/2}" y="-4">{width > 380 ? point.subject : formatMobile(point.subject)}</text>
+					<text x="{barWidth/2}" y="-4">{width > 760 ? point.subject : formatMobile(point.subject)}</text>
 				</g>
 			{/each}
 		</g>
@@ -71,6 +71,8 @@
 		</g>
 	</svg>
 </div>
+
+<br><br><br>
 
 <div class = "tableConfig">
 <table class="main_table">
@@ -161,29 +163,32 @@
     }
     .chart {
 		    width: 100%;
-		    max-width: 500px;
+		    max-width: 1000px;
 		    margin: 0 auto;
+
 	  }
 
 	  svg {
 		    position: relative;
 		    width: 100%;
-		    height: 200px;
+		    height: 400px;
 	  }
 
 	  .tick {
-		    font-family: Helvetica, Arial;
-		    font-size: .725em;
+		    font-size: 1.1em;
 		    font-weight: 200;
+        color: white;
+        background-color: white;
+        
 	  }
 
 	  .tick line {
-		    stroke: #e2e2e2;
+		    stroke: white;
 		    stroke-dasharray: 2;
 	  }
 
 	  .tick text {
-		    fill: #ccc;
+		    fill: white;
 		    text-anchor: start;
 	  }
 
@@ -193,12 +198,13 @@
 
 	  .x-axis .tick text {
 		    text-anchor: middle;
+        color: white;
 	  }
 
 	  .bars rect {
 		    fill: #a11;
 		    stroke: none;
-		    opacity: 0.65;
+		    opacity: 1;
 	  }
 
 </style>
