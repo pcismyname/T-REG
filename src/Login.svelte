@@ -7,6 +7,13 @@
         if(!(username in $accounts) || $accounts[username].pin != pin){
             alert('Incorrect Username or password');
         }
+        else if($accounts[username].pin == 'admin' && username == 'admin') {
+            $islogin = true;
+            $mode = 'menu_admin';
+            $account = username;
+            username = '';
+            pin = ''; 
+        }
         else {
             $islogin = true;
             $mode = 'menu';
