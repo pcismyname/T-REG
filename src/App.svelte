@@ -9,6 +9,7 @@
 	import Home from './Home.svelte';
 	import Confirm from './Confirm.svelte';
 	import Result from './Result.svelte';
+	import Detail from './Detail.svelte';
 	
 
 
@@ -41,6 +42,8 @@
 				<Confirm/>
 			{:else if $mode == 'result'}
 				<Result/>
+			{:else if $mode == 'detail'}
+				<Detail/>
 			{/if}
 		<Logout/>	
 	{/if}

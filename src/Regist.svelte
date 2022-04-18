@@ -248,7 +248,7 @@
         border-radius: 20px;
         border: 4px solid white;  
         color: white;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'K2D', sans-serif;
         cursor: pointer;
     }
 
@@ -259,7 +259,7 @@
         border-radius: 20px;
         border: 4px solid white;  
         color: white;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'K2D', sans-serif;
         font-size: 20px;
         cursor: pointer;
         margin-top:20px;

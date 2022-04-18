@@ -38,8 +38,8 @@
         left: 50%;
         margin-right: -50%;
         transform: translate(-50%, -70%);
-        border-radius: 10px;
-        border: 4px solid white;  
+        border-radius: 20px;
+        border: 4px solid white; 
         color: white;
         font-family: 'K2D', sans-serif;
         cursor: pointer;

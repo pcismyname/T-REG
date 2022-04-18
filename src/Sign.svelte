@@ -29,7 +29,6 @@
     border-radius: 10px;
     border: 2px solid white;  
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
     cursor: pointer;
 }
