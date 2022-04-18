@@ -27,8 +27,8 @@
 
 </script>
 <!-- svelte-ignore non-top-level-reactive-declaration -->
-
-<h1>ขอโควต้าวิชาเรียน</h1> 
+<body>
+  <h1>ขอโควต้าวิชาเรียน</h1> 
 <button on:click={()=>$mode='menu'} class="back">BACK TO MENU</button>
 
 <div class = "tableConfig">

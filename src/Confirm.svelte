@@ -45,6 +45,8 @@
 
 <button on:click={submit} class ="submit">ยืนยันการลงทะเบียน</button>
 <button on:click={back} class="back">BACK TO MENU</button>
+</body>
+
 
 
 <style>

@@ -55,6 +55,7 @@
 			{/if}
 		<Logout/>	
 	{/if}
+</body>
 
 
 <style>
