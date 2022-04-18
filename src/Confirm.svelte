@@ -4,9 +4,16 @@
 
   function submit(){
     $mode = 'complete';
-    $accounts[$account].course = [...$temp];
+    $accounts[$account].course = $accounts[$account].course.concat($temp);
+    for (let i=0;i<$temp.length;i++){
+      $courses[$temp[i]].quata += 1;
+    }
     $temp = [];
-    
+  }
+
+  function back(){
+    $mode = 'regist';
+    $temp = [];
   }
 
 </script>
@@ -21,7 +28,6 @@
     <th>หน่วยกิต</th>
     <th>วัน</th>
     <th>เวลา</th>
-    <th>ที่นั่งคงเหลือ</th>
 </tr>
   {#each $temp as item}
     {#if item != ''}
@@ -31,7 +37,6 @@
         <td>{$courses[item].credit}</td>
         <td>{$courses[item].day}</td>
         <td>{$courses[item].time}</td>
-        <td>{$courses[item].quata -= 1}</td>
       </tr>
     {/if}
     {/each}
@@ -39,7 +44,7 @@
 </div>
 
 <button on:click={submit} class ="submit">ยืนยันการลงทะเบียน</button>
-<button on:click={()=>$mode='regist'} class="back">BACK TO MENU</button></body>
+<button on:click={back} class="back">BACK TO MENU</button>
 
 
 <style>

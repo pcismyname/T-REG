@@ -10,12 +10,14 @@
 	import Confirm from './Confirm.svelte';
 	import Result from './Result.svelte';
 	import Statistic from './Statistic.svelte';
-	
+	import Withdraw from './Withdrawal.svelte';
 
 
 </script>	
 
 
+
+<body>
 	<nav class="top">
 		<img class="logo" src="img\logo.png" alt="">
 			<div class="nav_lists">		
@@ -44,6 +46,8 @@
 				<Result/>
 			{:else if $mode == 'statistic'}
 				<Statistic/>
+			{:else if $mode == 'withdraw'}
+				<Withdraw/>
 			{/if}
 		<Logout/>	
 	{/if}
@@ -81,11 +85,11 @@
     
 }
 .logo {
-    display: block;
-      max-width:350px;
-      max-height:150px;
-      width: auto;
-      height: auto;
-      padding-right: 1rem;
+	display: block;
+    max-width:350px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+    padding-right: 1rem;
 }	
 </style>

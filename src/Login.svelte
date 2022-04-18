@@ -38,11 +38,11 @@
             <div class="word"><label for="Password">Password</label></div>
             <input type="password" bind:value={pin} on:keydown={submit} >
         </div>
-        
+
         <div>
             <button on:click={isLogin}>Sign in</button>
         </div>
-          
+
     <div><img {src}  class = "photo" alt=""></div>
 
 </div>

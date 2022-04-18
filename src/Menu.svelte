@@ -12,7 +12,8 @@
     <button  on:click={()=>$mode='result'} class = 'btn'>ผลการลงทะเบียน</button><br>
     <button  on:click={()=>$mode='complete'} class = 'btn'>คู่มือการลงทะเบียน</button><br>
     <button  on:click={()=>$mode='statistic'} class = 'btn'> สถิติการขอโควต้า</button><br>
-    <button  on:click={()=>$mode='complete'} class = 'btn5'>ถอนรายวิชา</button><br>
+    <button  on:click={()=>$mode='complete'} class = 'btn'> ตารางเรียน</button><br>
+    <button  on:click={()=>$mode='withdraw'} class = 'btn5'>ถอนรายวิชา</button><br>
   </span>
 
 </body>
