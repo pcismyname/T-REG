@@ -206,8 +206,8 @@
     
     td{
       text-align: center;
-      padding-left: 29px;
-      padding-right: 39px;
+      padding-left: 30px;
+      padding-right: 30px;
       padding-top: 5px;
       padding-bottom: 5px;
     }
@@ -242,8 +242,8 @@
         width: 10rem;
         height: 3rem;
         position: absolute;
-        top: 28%;
-        right: 5%;
+        top: 7%;
+        right: 5% ;
         transform: translate(-50%, -70%);
         border-radius: 20px;
         border: 4px solid white;  

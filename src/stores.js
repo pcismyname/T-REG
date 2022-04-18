@@ -6,15 +6,15 @@ let data = {'0000':{name :'Chidsanuphong',surename: 'Pengchai',number: '64107420
             '3':{name :'Sathit',surename: 'Juntanasatan',number: '3', pin: '3',course : []}};
 
 
-let data_base = {'sf210_1':{quata:0,code:'sf210',sub:'Programmin skill development 1',sec:'760001',name:'Weerachai',surename:'Antonsorn',time:'13.00-14.00',day:'Monday', credit:'3'},
-                'sf210_2':{quata:40,code:'sf210',sub:'Programmin skill development 1',sec:'760002',name:'Jordan',surename:'Peterson',time:'09.00-12.00',day:'Tueday', credit:'3'},
-                'sf210_3':{quata:1,code:'sf210',sub:'Programmin skill development 1',sec:'760003',name:'Ben',surename:'Shapiro',time:'13.00-14.00',day:'Wednesday', credit:'3'},
-            'sf220_1':{quata:50,code:'sf220',sub:'Introduction to software engnieer',sec:'860004',name:'Donna',surename:'Joe',time:'13.00-14.00',day:'Thursday',credit:'3'},
-            'sf220_2':{quata:50,code:'sf220',sub:'Introduction to software engnieer',sec:'860005',name:'Bella',surename:'Dolphin',time:'13.00-14.00',day:'Friday',credit:'3'},
-            'sf220_3':{quata:50,code:'sf220',sub:'Introduction to software engnieer',sec:'860006',name:'Mike',surename:'Ross',time:'09.00-12.00',day:'Saturday',credit:'3'},
-            'tu100_1':{quata:60,code:'tu100',sub:'Civic Engagment',sec:'460007',name:'Harvey',surename:'Spector',time:'13.00-14.00',day:'Sunday',credit:'3'},
-            'tu100_2':{quata:60,code:'tu100',sub:'Civic Engagment',sec:'460008',name:'Louise',surename:'Litt',time:'13.00-14.00',day:'Monday',credit:'3'},
-            'tu100_3':{quata:60,code:'tu100',sub:'Civic Engagment',sec:'460009',name:'Tee',surename:'Palmer',time:'13.00-16.00',day:'Tuesday',credit:'3'},};
+let data_base = {'sf210_1':{quata:0,code:'sf210',sub:'Programmin skill development 1',sec:'760001',name:'John',surename:'Lennon',time:'13.00-14.00',day:'Monday', credit:'3'},
+                'sf210_2':{quata:40,code:'sf210',sub:'Programmin skill development 1',sec:'760002',name:'Pual',surename:'Mccany',time:'09.00-12.00',day:'Tueday', credit:'3'},
+                'sf210_3':{quata:1,code:'sf210',sub:'Programmin skill development 1',sec:'760003',name:'Posty',surename:'Malone',time:'13.00-14.00',day:'Wednesday', credit:'3'},
+            'sf220_1':{quata:50,code:'sf220',sub:'Introduction to software engnieer',sec:'860004',name:'Kurt',surename:'Cobain',time:'13.00-14.00',day:'Thursday',credit:'3'},
+            'sf220_2':{quata:50,code:'sf220',sub:'Introduction to software engnieer',sec:'860005',name:'Whale',surename:'Dolph',time:'13.00-14.00',day:'Friday',credit:'3'},
+            'sf220_3':{quata:50,code:'sf220',sub:'Introduction to software engnieer',sec:'860006',name:'Harry',surename:'Styles',time:'09.00-12.00',day:'Saturday',credit:'3'},
+            'tu100_1':{quata:60,code:'tu100',sub:'Civic Engagment',sec:'460007',name:'Noel',surename:'Gallar',time:'13.00-14.00',day:'Sunday',credit:'3'},
+            'tu100_2':{quata:60,code:'tu100',sub:'Civic Engagment',sec:'460008',name:'Liam',surename:'Galger',time:'13.00-14.00',day:'Monday',credit:'3'},
+            'tu100_3':{quata:60,code:'tu100',sub:'Civic Engagment',sec:'460009',name:'Pablo',surename:'Esgoba',time:'13.00-16.00',day:'Tuesday',credit:'3'},};
 
 
 export const courses = writable(data_base);
