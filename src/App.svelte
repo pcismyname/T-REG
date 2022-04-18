@@ -9,11 +9,7 @@
 	import Home from './Home.svelte';
 	import Confirm from './Confirm.svelte';
 	import Result from './Result.svelte';
-	
-
-
 </script>	
-
 
 <body>
 	<nav class="top">

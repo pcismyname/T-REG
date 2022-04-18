@@ -9,6 +9,11 @@
     
   }
 
+  function back(){
+    $mode = 'regist';
+    $temp = [];
+  }
+
 </script>
 
 <h1>ยืนยันการลงทะเบียน</h1>
@@ -37,7 +42,7 @@
 </div>
 
 <button on:click={submit} class ="submit">ยืนยันการลงทะเบียน</button>
-<button on:click={()=>$mode='regist'} class="back">BACK TO MENU</button>
+<button on:click={back} class="back">BACK TO MENU</button>
 
 
 <style>
