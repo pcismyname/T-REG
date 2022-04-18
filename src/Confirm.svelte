@@ -4,7 +4,7 @@
 
   function submit(){
     $mode = 'complete';
-    $accounts[$account].course = [...$temp];
+    $accounts[$account].course = $accounts[$account].course.concat($temp);
     for (let i=0;i<$temp.length;i++){
       $courses[$temp[i]].quata += 1;
     }

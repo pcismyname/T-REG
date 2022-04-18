@@ -9,6 +9,7 @@
 	import Home from './Home.svelte';
 	import Confirm from './Confirm.svelte';
 	import Result from './Result.svelte';
+	import Withdraw from './Withdrawal.svelte';
 </script>	
 
 <body>
@@ -38,6 +39,8 @@
 				<Confirm/>
 			{:else if $mode == 'result'}
 				<Result/>
+			{:else if $mode == 'withdraw'}
+				<Withdraw/>
 			{/if}
 		<Logout/>	
 	{/if}
