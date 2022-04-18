@@ -121,7 +121,7 @@
     <tr  class="main_row" on:click={display3.toggle}>
       <td>TU100</td>
       <td>CIVIC ENGAGEMENT</td>
-      <td>{$courses['tu100_1'].quata + $courses['tu100_2'].quata + $courses['tu100_3'].quata}</td>
+      <td>{$courses['tu100_1'].quata + $courses['tu100_2'].quata + $courses['tu100_3'].quata}/{$courses['tu100_1'].max + $courses['tu100_2'].max + $courses['tu100_3'].max}</td>
       <td>3.0</td>
     </tr>
   {#if $display3}

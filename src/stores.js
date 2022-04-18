@@ -9,9 +9,9 @@ let data = {'0':{name :'Chidsanuphong',surename: 'Pengchai',number: '6410742040'
 let data_base = {'sf210_1':{quata:30,max:30,code:'sf210',sub:'Programmin skill development 1',sec:'760001',name:'Weerachai',surename:'Antonsorn',time:'13.00-14.00',day:'Monday', credit:'3'},
                 'sf210_2':{quata:49,max:50,code:'sf210',sub:'Programmin skill development 1',sec:'760002',name:'Jordan',surename:'Peterson',time:'09.00-12.00',day:'Tueday', credit:'3'},
                 'sf210_3':{quata:1,max:50,code:'sf210',sub:'Programmin skill development 1',sec:'760003',name:'Ben',surename:'Shapiro',time:'13.00-14.00',day:'Wednesday', credit:'3'},
-            'sf220_1':{quata:10,max:50,code:'sf220',sub:'Introduction to software engnieer',sec:'860004',name:'Donna',surename:'Joe',time:'13.00-14.00',day:'Thursday',credit:'3'},
+            'sf220_1':{quata:50,max:50,code:'sf220',sub:'Introduction to software engnieer',sec:'860004',name:'Donna',surename:'Joe',time:'13.00-14.00',day:'Thursday',credit:'3'},
             'sf220_2':{quata:49,max:50,code:'sf220',sub:'Introduction to software engnieer',sec:'860005',name:'Bella',surename:'Dolphin',time:'13.00-14.00',day:'Friday',credit:'3'},
-            'sf220_3':{quata:30,max:50,code:'sf220',sub:'Introduction to software engnieer',sec:'860006',name:'Mike',surename:'Ross',time:'09.00-12.00',day:'Saturday',credit:'3'},
+            'sf220_3':{quata:20,max:50,code:'sf220',sub:'Introduction to software engnieer',sec:'860006',name:'Mike',surename:'Ross',time:'09.00-12.00',day:'Saturday',credit:'3'},
             'tu100_1':{quata:50,max:50,code:'tu100',sub:'Civic Engagment',sec:'460007',name:'Harvey',surename:'Spector',time:'13.00-14.00',day:'Sunday',credit:'3'},
             'tu100_2':{quata:20,max:50,code:'tu100',sub:'Civic Engagment',sec:'460008',name:'Louise',surename:'Litt',time:'13.00-14.00',day:'Monday',credit:'3'},
             'tu100_3':{quata:40,max:50,code:'tu100',sub:'Civic Engagment',sec:'460009',name:'Tee',surename:'Palmer',time:'13.00-16.00',day:'Tuesday',credit:'3'},};

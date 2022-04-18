@@ -3,9 +3,9 @@
 	import { scaleLinear } from 'd3-scale';
 
 	const points = [
-		{ subject: 'SF210', rate: 120 - ($courses['sf210_1'].quata + $courses['sf210_2'].quata + $courses['sf210_3'].quata) },
-		{ subject: 'SF220', rate: 150 - ($courses['sf220_1'].quata + $courses['sf220_2'].quata + $courses['sf220_3'].quata) },
-		{ subject: 'TU100', rate: 180 - ($courses['tu100_1'].quata + $courses['tu100_2'].quata + $courses['tu100_3'].quata) },
+		{ subject: 'SF210', rate: ($courses['sf210_1'].quata + $courses['sf210_2'].quata + $courses['sf210_3'].quata) },
+		{ subject: 'SF220', rate: ($courses['sf220_1'].quata + $courses['sf220_2'].quata + $courses['sf220_3'].quata) },
+		{ subject: 'TU100', rate: ($courses['tu100_1'].quata + $courses['tu100_2'].quata + $courses['tu100_3'].quata) },
 	];
 
 	const xTicks = ['SF210','SF220','TU100'];
@@ -85,19 +85,19 @@
     <tr class="main_row">
       <td>SF210</td>
       <td>PROGRAMMING SKILL DEVELOPEMENT 1 </td>
-      <td>{120 - ($courses['sf210_1'].quata + $courses['sf210_2'].quata + $courses['sf210_3'].quata)}</td>
+      <td>{($courses['sf210_1'].quata + $courses['sf210_2'].quata + $courses['sf210_3'].quata)}</td>
     </tr>
 
     <tr  class="main_row">
       <td>SF220</td>
       <td>INTRODUCTION TO SOFTWARE ENGINEER</td>
-      <td>{150 - ($courses['sf220_1'].quata + $courses['sf220_2'].quata + $courses['sf220_3'].quata)}</td>
+      <td>{($courses['sf220_1'].quata + $courses['sf220_2'].quata + $courses['sf220_3'].quata)}</td>
     </tr>
 
     <tr  class="main_row">
       <td>TU100</td>
       <td>CIVIC ENGAGEMENT</td>
-      <td>{180 - ($courses['tu100_1'].quata + $courses['tu100_2'].quata + $courses['tu100_3'].quata)}</td>
+      <td>{($courses['tu100_1'].quata + $courses['tu100_2'].quata + $courses['tu100_3'].quata)}</td>
     </tr>
 
 </table>
