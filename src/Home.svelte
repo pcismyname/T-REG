@@ -52,6 +52,7 @@
     margin: 5px;
     color: white;
     text-align: left;
+    font-family: 'K2D', sans-serif;
     font-size: 1.30rem;
     position: absolute;
     left: 20.7rem;

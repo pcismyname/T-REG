@@ -11,6 +11,8 @@
 	import Result from './Result.svelte';
 	import Statistic from './Statistic.svelte';
 	import Withdraw from './Withdrawal.svelte';
+	import Detail from './Detail.svelte';
+	
 
 
 </script>	
@@ -48,6 +50,8 @@
 				<Statistic/>
 			{:else if $mode == 'withdraw'}
 				<Withdraw/>
+			{:else if $mode == 'detail'}
+				<Detail/>
 			{/if}
 		<Logout/>	
 	{/if}

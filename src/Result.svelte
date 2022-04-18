@@ -86,13 +86,13 @@
         width: 10rem;
         height: 3rem;
         position: absolute;
-        top: 28%;
-        right: 5%;
+        top: 7%;
+        right: 5% ;
         transform: translate(-50%, -70%);
         border-radius: 20px;
         border: 4px solid white;  
         color: white;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'K2D', sans-serif;
         cursor: pointer;
     }
 </style>
