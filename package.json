@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "boostrap": "^2.0.0",
+    "d3-scale": "^4.0.2",
     "sirv-cli": "^2.0.0"
   }
 }
