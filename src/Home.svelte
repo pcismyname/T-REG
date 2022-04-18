@@ -21,7 +21,7 @@
     font-family: 'Itim', cursive;      
   }
   body {
-    font-family: 'Itim', cursive;
+    font-family: 'K2D', sans-serif;
     text-align: center;
     padding: 1em;
     margin: 0 auto;

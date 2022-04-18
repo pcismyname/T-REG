@@ -43,7 +43,7 @@
 
 
 <style>
-  body{font-family: 'Itim', cursive;}
+  body{font-family: 'K2D', sans-serif;}
     h1{
       margin-left: 100px;
       color: white;

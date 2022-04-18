@@ -163,7 +163,7 @@
 
 
 <style>
-  body{font-family: 'Itim', cursive;}
+  body{font-family: 'K2D', sans-serif;}
     .tableConfig{
       padding: 20px;
       border: 5px solid white;

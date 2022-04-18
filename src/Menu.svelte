@@ -19,11 +19,11 @@
 
 <style>
   :root {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    font-family: 'K2D', sans-serif;
       
   }
   body {
-    font-family: 'Itim', cursive;
+    font-family: 'K2D', sans-serif;
     text-align: center;
     padding: 1em;
     margin: 0 auto;

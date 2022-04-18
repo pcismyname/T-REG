@@ -15,7 +15,6 @@
 </script>	
 
 
-<body>
 	<nav class="top">
 		<img class="logo" src="img\logo.png" alt="">
 			<div class="nav_lists">		
@@ -45,10 +44,9 @@
 			{/if}
 		<Logout/>	
 	{/if}
-</body>
+
 
 <style>
-body{font-family: 'Itim', cursive;}
 :global(body) {
     background: linear-gradient(296.82deg, #E4BAFF 0%, #AEBAF8 100%),
     linear-gradient(0deg, #FFFFFF, #FFFFFF);
@@ -73,7 +71,7 @@ body{font-family: 'Itim', cursive;}
     background: none;
     margin-left: 3rem;
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'K2D', sans-serif;
     color: white;
    
     cursor: pointer;

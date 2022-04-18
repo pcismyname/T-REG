@@ -52,7 +52,7 @@
 
 <style>
     body{color: white;
-        font-family: 'Itim', cursive;}
+        font-family: 'K2D', sans-serif;}
 
     h1{
         font-size: 45px;

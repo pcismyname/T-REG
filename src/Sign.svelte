@@ -6,7 +6,7 @@
 </div>
 <style>
 .sign_out {
-    font-family: 'Itim', cursive;
+    font-family: 'K2D', sans-serif;
     background: rgba(255, 255, 255, 0);
     border: none;
     display: flex;
@@ -19,7 +19,7 @@
     font-size: 1rem;
 }
 .sign_in {
-    font-family: 'Itim', cursive;
+    font-family: 'K2D', sans-serif;
     background: rgba(255, 255, 255, 0);
     width: 6rem;
     height: 2.5rem;
