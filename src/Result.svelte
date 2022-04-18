@@ -34,7 +34,8 @@
     {/each}
   </table>
 </div>
-  <button on:click={()=>$mode='menu'} class="back">BACK TO MENU</button></body>
+  <button on:click={()=>$mode='menu'} class="back">BACK TO MENU</button>
+</body>
 
 
 <style>
