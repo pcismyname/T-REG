@@ -14,7 +14,7 @@
 	}	
 
 	function no_quata(){
-			alert('no quata left!')
+			alert('no seat left!')
 	}
 
 	
@@ -23,7 +23,7 @@
 <!-- svelte-ignore a11y-label-has-associated-control -->
 <label>
 	{#if type === 'radio'}
-		{#if $courses[value].quata==0 }
+		{#if $courses[value].quata == $courses[value].max}
 			<input
 			type="radio"
 			class="collapsed"

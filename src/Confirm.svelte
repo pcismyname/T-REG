@@ -5,8 +5,10 @@
   function submit(){
     $mode = 'complete';
     $accounts[$account].course = [...$temp];
+    for (let i=0;i<$temp.length;i++){
+      $courses[$temp[i]].quata += 1;
+    }
     $temp = [];
-    
   }
 
   function back(){

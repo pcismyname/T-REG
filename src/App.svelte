@@ -76,11 +76,11 @@
     
 }
 .logo {
-    display: block;
-      max-width:350px;
-      max-height:150px;
-      width: auto;
-      height: auto;
-      padding-right: 1rem;
+	display: block;
+    max-width:350px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+    padding-right: 1rem;
 }	
 </style>

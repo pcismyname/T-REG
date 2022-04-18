@@ -21,7 +21,6 @@
     $temp = [...$temp, selectedRadio_1];
     $temp = [...$temp, selectedRadio_2];
     $temp = [...$temp, selectedRadio_3];
-    
   }
 
     
@@ -29,7 +28,7 @@
 </script>
 <!-- svelte-ignore non-top-level-reactive-declaration -->
 
-<h1>ลงทะเบียนเรียน</h1> 
+<h1>ขอโควต้าวิชาเรียน</h1> 
 <button on:click={()=>$mode='menu'} class="back">BACK TO MENU</button>
 
 <div class = "tableConfig">
@@ -37,14 +36,14 @@
     <tr>
         <th>รหัสวิชา</th>
         <th>ชื่อวิชา</th>
-        <th>โควต้า (ที่นั่งคงเหลือ)</th>
+        <th>โควต้า</th>
         <th>หน่วยกิต</th>
     </tr>
     
     <tr class="main_row"  on:click={display1.toggle}>
       <td>SF210</td>
       <td>PROGRAMMING SKILL DEVELOPEMENT 1 </td>
-      <td>{$courses['sf210_1'].quata + $courses['sf210_2'].quata + $courses['sf210_3'].quata}</td>
+      <td>{$courses['sf210_1'].quata + $courses['sf210_2'].quata + $courses['sf210_3'].quata}/{$courses['sf210_1'].max + $courses['sf210_2'].max + $courses['sf210_3'].max}</td>
       <td>3.0</td>
     </tr>
 
@@ -54,26 +53,26 @@
       <tr>
         <td>Section {$courses['sf210_1'].sec}</td><td>{$courses['sf210_1'].day} {$courses['sf210_1'].time}</td>
         <td>{$courses['sf210_1'].name} {$courses['sf210_1'].surename}
-        </td><td >{$courses['sf210_1'].quata}/40</td>
+        </td><td >{$courses['sf210_1'].quata}/{$courses['sf210_1'].max}</td>
         <td> 
           <Toggle type='radio' bind:group={selectedRadio_1} value={'sf210_1'} let:checked={checked}>
-            <button  class="regist" class:registed={checked}>{checked ? 'ยกเลิก' : 'ลงทะเบียน'}</button>
+            <button  class="regist" class:registed={checked}>{checked ? 'จองแล้ว' : 'ขอโควต้า'}</button>
           </Toggle></td>
       </tr>
       <tr>
         <td>Section {$courses['sf210_2'].sec} </td><td>{$courses['sf210_2'].day} {$courses['sf210_2'].time}</td>
         <td>{$courses['sf210_2'].name} {$courses['sf210_2'].surename}</td>
-        <td> {$courses['sf210_2'].quata}/40 </td><td>
+        <td> {$courses['sf210_2'].quata}/{$courses['sf210_2'].max} </td><td>
           <Toggle type='radio' bind:group={selectedRadio_1} value={'sf210_2'} let:checked={checked}>
-          <button class="regist"  class:registed={checked}>{checked ? 'ยกเลิก' : 'ลงทะเบียน'}</button>
+          <button class="regist"  class:registed={checked}>{checked ? 'จองแล้ว' : 'ขอโควต้า'}</button>
         </Toggle></td>
       </tr>
       <tr>
         <td>Section {$courses['sf210_3'].sec} </td><td>{$courses['sf210_3'].day} {$courses['sf210_3'].time}</td>
         <td>{$courses['sf210_3'].name} {$courses['sf210_3'].surename}</td>
-        <td> {$courses['sf210_3'].quata}/40 </td><td>
+        <td> {$courses['sf210_3'].quata}/{$courses['sf210_2'].max}  </td><td>
           <Toggle type='radio' bind:group={selectedRadio_1} value={'sf210_3'} let:checked={checked}>
-          <button  class="regist"  class:registed={checked}>{checked ? 'ยกเลิก' : 'ลงทะเบียน'}</button>
+          <button  class="regist"  class:registed={checked}>{checked ? 'จองแล้ว' : 'ขอโควต้า'}</button>
         </Toggle></td>
       </tr>
     </div>
@@ -84,7 +83,7 @@
     <tr  class="main_row" on:click={display2.toggle}>
       <td>SF220</td>
       <td>INTRODUCTION TO SOFTWARE ENGINEER</td>
-      <td>{$courses['sf220_1'].quata + $courses['sf220_2'].quata + $courses['sf220_3'].quata}</td>
+      <td>{$courses['sf220_1'].quata + $courses['sf220_2'].quata + $courses['sf220_3'].quata}/{$courses['sf220_1'].max + $courses['sf220_2'].max + $courses['sf220_3'].max}</td>
       <td>3.0</td>
     </tr>
 
@@ -96,7 +95,7 @@
           <td>{$courses['sf220_1'].name} {$courses['sf220_1'].surename}</td><td > {$courses['sf220_1'].quata}/50</td>
           <td> 
             <Toggle type='radio' bind:group={selectedRadio_2} value={'sf220_1'} let:checked={checked}>
-              <button  class="regist" class:registed={checked}>{checked ? 'ยกเลิก' : 'ลงทะเบียน'}</button>
+              <button  class="regist" class:registed={checked}>{checked ? 'จองแล้ว' : 'ขอโควต้า'}</button>
             </Toggle></td>
         </tr>
         <tr>
@@ -104,7 +103,7 @@
           <td>{$courses['sf220_2'].name} {$courses['sf220_2'].surename}</td>
           <td>  {$courses['sf220_2'].quata}/50 </td><td>
             <Toggle type='radio' bind:group={selectedRadio_2} value={'sf220_2'} let:checked={checked}>
-            <button class="regist"  class:registed={checked}>{checked ? 'ยกเลิก' : 'ลงทะเบียน'}</button>
+            <button class="regist"  class:registed={checked}>{checked ? 'จองแล้ว' : 'ขอโควต้า'}</button>
           </Toggle></td>
         </tr>
         <tr>
@@ -112,7 +111,7 @@
           <td>{$courses['sf220_3'].name} {$courses['sf220_3'].surename}</td>
           <td>{$courses['sf220_3'].quata}/50</td><td>
             <Toggle type='radio' bind:group={selectedRadio_2} value={'sf220_3'} let:checked={checked}>
-            <button  class="regist"  class:registed={checked}>{checked ? 'ยกเลิก' : 'ลงทะเบียน'}</button>
+            <button  class="regist"  class:registed={checked}>{checked ? 'จองแล้ว' : 'ขอโควต้า'}</button>
           </Toggle></td>
         </tr>
       </div>
@@ -130,26 +129,26 @@
       <div class="sub_table" >
         <tr >
           <td>Section<br>{$courses['tu100_1'].sec}</td><td>{$courses['tu100_1'].day}<br>{$courses['tu100_1'].time}</td>
-          <td>{$courses['tu100_1'].name} {$courses['tu100_1'].surename}</td><td > {$courses['tu100_1'].quata}/60</td>
+          <td>{$courses['tu100_1'].name} {$courses['tu100_1'].surename}</td><td > {$courses['tu100_1'].quata}/{$courses['tu100_1'].max}</td>
           <td> 
             <Toggle type='radio' bind:group={selectedRadio_3} value={'tu100_1'} let:checked={checked}>
-              <button  class="regist" class:registed={checked}>{checked ? 'ยกเลิก' : 'ลงทะเบียน'}</button>
+              <button  class="regist" class:registed={checked}>{checked ? 'จองแล้ว' : 'ขอโควต้า'}</button>
             </Toggle></td>
         </tr>
         <tr>
           <td>Section<br>{$courses['tu100_2'].sec}</td><td>{$courses['tu100_2'].day}<br>{$courses['tu100_2'].time}</td>
-          <td>{$courses['tu100_2'].name} {$courses['tu100_2'].surename}</td><td > {$courses['tu100_2'].quata}/60</td>
+          <td>{$courses['tu100_2'].name} {$courses['tu100_2'].surename}</td><td > {$courses['tu100_2'].quata}/{$courses['tu100_2'].max}</td>
           <td>
             <Toggle type='radio' bind:group={selectedRadio_3} value={'tu100_2'} let:checked={checked}>
-            <button class="regist"  class:registed={checked}>{checked ? 'ยกเลิก' : 'ลงทะเบียน'}</button>
+            <button class="regist"  class:registed={checked}>{checked ? 'จองแล้ว' : 'ขอโควต้า'}</button>
           </Toggle></td>
         </tr>
         <tr>
           <td>Section<br>{$courses['tu100_3'].sec}</td><td>{$courses['tu100_3'].day}<br>{$courses['tu100_3'].time}</td>
-          <td>{$courses['tu100_3'].name} {$courses['tu100_3'].surename}</td><td > {$courses['tu100_3'].quata}/60</td>
+          <td>{$courses['tu100_3'].name} {$courses['tu100_3'].surename}</td><td > {$courses['tu100_3'].quata}/{$courses['tu100_3'].max}</td>
           <td>
             <Toggle type='radio' bind:group={selectedRadio_3} value={'tu100_3'} let:checked={checked}>
-            <button  class="regist"  class:registed={checked}>{checked ? 'ยกเลิก' : 'ลงทะเบียน'}</button>
+            <button  class="regist"  class:registed={checked}>{checked ? 'จองแล้ว' : 'ขอโควต้า'}</button>
           </Toggle></td>
         </tr>
       </div>
