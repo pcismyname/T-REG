@@ -9,6 +9,8 @@
   <div class="user"> {$accounts[$account].name}</div>
   <span class = 'btn'>
     <button  on:click={()=>$mode='statistic'} class = 'btn'> สถิติการขอโควต้า</button><br>
+    <button  on:click={()=>$mode='modify'} class = 'btn'>เพิ่ม/ลดโควต้า</button><br>
+
   </span>
 
 </body>

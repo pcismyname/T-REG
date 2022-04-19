@@ -33,7 +33,7 @@
   {/each}
   </table>
   </div>
-<button on:click={()=>$mode='menu'} class="back">BACK TO MENU</button>
+<button on:click={()=>$mode='menu_admin'} class="back">BACK TO MENU</button>
 <button on:click={submit} class ="submit">ยืนยันการลงทะเบียน</button>
 
 </body>
