@@ -8,11 +8,11 @@
   <h1>Welcome!</h1>
   <div class="user"> {$accounts[$account].name}</div>
   <span class = 'btn'>
-    <button  on:click={()=>$mode='regist'} class = 'btn'>ลงทะเบียนเรียน</button><br>
-    <button  on:click={()=>$mode='result'} class = 'btn'>ผลการลงทะเบียน</button><br>
-    <button  on:click={()=>$mode='complete'} class = 'btn'>คู่มือการลงทะเบียน</button><br>
+    <button  on:click={()=>$mode='regist'} class = 'btn'>ขอโควต้ารายวิชา</button><br>
+    <button  on:click={()=>$mode='result'} class = 'btn'>ผลการขอโควต้า</button><br>
+    <button  on:click={()=>$mode='complete'} class = 'btn'>คู่มือการขอโควต้า</button><br>
     <button  on:click={()=>$mode='statistic'} class = 'btn'> สถิติการขอโควต้า</button><br>
-    <button  on:click={()=>$mode='withdraw'} class = 'btn5'>ยกเลิกการขอโควต้า</button><br>
+    <button  on:click={()=>$mode='withdraw'} class = 'btn5'>เพิกถอนการขอโควต้า</button><br>
     <button  on:click={()=>$mode='detail'} class = 'btn'>รายละเอียดรายวิชา</button><br>
   </span>
 
