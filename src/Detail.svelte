@@ -6,14 +6,14 @@
 <center><h1>รายละเอียดรายวิชา</h1></center>
 
 <div class="box1">
-    <button on:click={()=>$mode='detail'}><h2>SF210</h2><br>Programmin skill development 1</button>
-    <button on:click={()=>$mode='detail'}><h2>SF220</h2><br>Introduction to software engineer</button>
+    <button on:click={()=>$mode='detail'}><h2>SF210</h2><br>Programming skill development 1</button>
+    <button on:click={()=>$mode='detail'}><h2>SF220</h2><br>Introduction to software engineering</button>
     <button on:click={()=>$mode='detail'}><h2>SF230</h2><br>Linear Algebra</button>
 </div>
 <div class="box2">
-    <button on:click={()=>$mode='detail'}><h2>MA111</h2><br>Calculas 1</button>
-    <button on:click={()=>$mode='detail'}><h2>SC135</h2><br>Fundamental Physic 1</button>
-    <button on:click={()=>$mode='detail'}><h2>TU100</h2><br>Civic Engagment</button>
+    <button on:click={()=>$mode='detail'}><h2>MA111</h2><br>Fundamentals of Calculus</button>
+    <button on:click={()=>$mode='detail'}><h2>SC135</h2><br>General Physics</button>
+    <button on:click={()=>$mode='detail'}><h2>TU100</h2><br>Civic Engagement</button>
 </div>
 
 <center>

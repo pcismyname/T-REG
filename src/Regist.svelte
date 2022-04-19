@@ -42,7 +42,7 @@
     
     <tr class="main_row"  on:click={display1.toggle}>
       <td>SF210</td>
-      <td>PROGRAMMING SKILL DEVELOPEMENT 1 </td>
+      <td>PROGRAMMING SKILL DEVELOPMENT 1 </td>
       <td>{$courses['sf210_1'].quata + $courses['sf210_2'].quata + $courses['sf210_3'].quata}/{$courses['sf210_1'].max + $courses['sf210_2'].max + $courses['sf210_3'].max}</td>
       <td>3.0</td>
     </tr>
@@ -51,7 +51,7 @@
     <td colspan="4" transition:fade>
     <div class="sub_table" >
       <tr>
-        <td>Section {$courses['sf210_1'].sec}</td><td>{$courses['sf210_1'].day} {$courses['sf210_1'].time}</td>
+        <td>Section<br>{$courses['sf210_1'].sec}</td><td>{$courses['sf210_1'].day}<br>{$courses['sf210_1'].time}</td>
         <td>{$courses['sf210_1'].name} {$courses['sf210_1'].surename}
         </td><td >{$courses['sf210_1'].quata}/{$courses['sf210_1'].max}</td>
         <td> 
@@ -60,7 +60,7 @@
           </Toggle></td>
       </tr>
       <tr>
-        <td>Section {$courses['sf210_2'].sec} </td><td>{$courses['sf210_2'].day} {$courses['sf210_2'].time}</td>
+        <td>Section<br>{$courses['sf210_2'].sec} </td><td>{$courses['sf210_2'].day}<br>{$courses['sf210_2'].time}</td>
         <td>{$courses['sf210_2'].name} {$courses['sf210_2'].surename}</td>
         <td> {$courses['sf210_2'].quata}/{$courses['sf210_2'].max} </td><td>
           <Toggle type='radio' bind:group={selectedRadio_1} value={'sf210_2'} let:checked={checked}>
@@ -68,7 +68,7 @@
         </Toggle></td>
       </tr>
       <tr>
-        <td>Section {$courses['sf210_3'].sec} </td><td>{$courses['sf210_3'].day} {$courses['sf210_3'].time}</td>
+        <td>Section<br>{$courses['sf210_3'].sec} </td><td>{$courses['sf210_3'].day}<br>{$courses['sf210_3'].time}</td>
         <td>{$courses['sf210_3'].name} {$courses['sf210_3'].surename}</td>
         <td> {$courses['sf210_3'].quata}/{$courses['sf210_2'].max}  </td><td>
           <Toggle type='radio' bind:group={selectedRadio_1} value={'sf210_3'} let:checked={checked}>
@@ -82,7 +82,7 @@
 
     <tr  class="main_row" on:click={display2.toggle}>
       <td>SF220</td>
-      <td>INTRODUCTION TO SOFTWARE ENGINEER</td>
+      <td>INTRODUCTION TO SOFTWARE ENGINEERING</td>
       <td>{$courses['sf220_1'].quata + $courses['sf220_2'].quata + $courses['sf220_3'].quata}/{$courses['sf220_1'].max + $courses['sf220_2'].max + $courses['sf220_3'].max}</td>
       <td>3.0</td>
     </tr>

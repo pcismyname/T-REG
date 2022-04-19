@@ -84,13 +84,13 @@
     
     <tr class="main_row">
       <td>SF210</td>
-      <td>PROGRAMMING SKILL DEVELOPEMENT 1 </td>
+      <td>PROGRAMMING SKILL DEVELOPMENT 1 </td>
       <td>{($courses['sf210_1'].quata + $courses['sf210_2'].quata + $courses['sf210_3'].quata)}</td>
     </tr>
 
     <tr  class="main_row">
       <td>SF220</td>
-      <td>INTRODUCTION TO SOFTWARE ENGINEER</td>
+      <td>INTRODUCTION TO SOFTWARE ENGINEERING</td>
       <td>{($courses['sf220_1'].quata + $courses['sf220_2'].quata + $courses['sf220_3'].quata)}</td>
     </tr>
 
