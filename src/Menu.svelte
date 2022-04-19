@@ -12,10 +12,9 @@
     <button  on:click={()=>$mode='result'} class = 'btn'>ผลการขอโควต้า</button><br>
     <button  on:click={()=>$mode='complete'} class = 'btn'>คู่มือการขอโควต้า</button><br>
     <button  on:click={()=>$mode='statistic'} class = 'btn'> สถิติการขอโควต้า</button><br>
-    <button  on:click={()=>$mode='withdraw'} class = 'btn5'>เพิกถอนการขอโควต้า</button><br>
     <button  on:click={()=>$mode='detail'} class = 'btn'>รายละเอียดรายวิชา</button><br>
     <button  on:click={()=>$mode='modify'} class = 'btn'>เพิ่ม/ลดโควต้า</button><br>
-
+    <button  on:click={()=>$mode='withdraw'} class = 'btn5'>เพิกถอนการขอโควต้า</button><br>
   </span>
 
 </body>
