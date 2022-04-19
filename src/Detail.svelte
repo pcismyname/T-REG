@@ -12,7 +12,7 @@
 </div>
 <div class="box2">
     <button on:click={()=>$mode='detail'}><h2>MA111</h2><br>Fundamentals of Calculus</button>
-    <button on:click={()=>$mode='detail'}><h2>SC135</h2><br>General Physics</button>
+    <button on:click={()=>$mode='detail'}><h2>TU105</h2><br>Communication skills in English</button>
     <button on:click={()=>$mode='detail'}><h2>TU100</h2><br>Civic Engagement</button>
 </div>
 
@@ -30,7 +30,7 @@
         height: 150px;
         border-radius: 20px;
         padding: 40px;
-        font-size: 20px;
+        font-size: 18px;
         color: rgba(101, 99, 186, 1);
         text-align: left;
         margin-top: 15px;
