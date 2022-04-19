@@ -148,7 +148,7 @@
     }
    
     .back {
-        background: rgba(255, 255, 255, 0);
+    	background: rgba(255, 255, 255, 0);
         width: 10rem;
         height: 3rem;
         position: absolute;
@@ -162,49 +162,49 @@
         cursor: pointer;
     }
     .chart {
-		    width: 100%;
-		    max-width: 1000px;
-		    margin: 0 auto;
+		width: 100%;
+		max-width: 1000px;
+		margin: 0 auto;
 
-	  }
+	}
 
-	  svg {
-		    position: relative;
-		    width: 100%;
-		    height: 400px;
-	  }
+	svg {
+		position: relative;
+		width: 100%;
+		height: 400px;
+	}
 
-	  .tick {
-		    font-size: 1.1em;
-		    font-weight: 200;
+	.tick {
+		font-size: 1.1em;
+		font-weight: 200;
         color: white;
         background-color: white;
         
-	  }
+	}
 
-	  .tick line {
-		    stroke: white;
-		    stroke-dasharray: 2;
-	  }
+	.tick line {
+		stroke: white;
+		stroke-dasharray: 2;
+	}
 
-	  .tick text {
-		    fill: white;
-		    text-anchor: start;
-	  }
+	.tick text {
+		fill: white;
+		text-anchor: start;
+	}
 
-	  .tick.tick-0 line {
-		    stroke-dasharray: 0;
-	  }
+	.tick.tick-0 line {
+		stroke-dasharray: 0;
+	}
 
-	  .x-axis .tick text {
-		    text-anchor: middle;
+	.x-axis .tick text {
+		text-anchor: middle;
         color: white;
-	  }
+	}
 
-	  .bars rect {
-		    fill: #a11;
-		    stroke: none;
-		    opacity: 1;
-	  }
+	.bars rect {
+		fill: #a11;
+		stroke: none;
+		opacity: 1;
+	}
 
 </style>
