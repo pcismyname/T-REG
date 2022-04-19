@@ -36,7 +36,7 @@
 
 
 <h1>สถิติการขอโควต้า</h1> 
-<button on:click={()=>$mode='menu_admin'} class="back">BACK TO MENU</button>
+<button on:click={()=>$mode='menu'} class="back">BACK TO MENU</button>
 
 <div class="chart" bind:clientWidth={width} bind:clientHeight={height}>
 	<svg>
