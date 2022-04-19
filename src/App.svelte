@@ -13,6 +13,7 @@
 	import Withdraw from './Withdrawal.svelte';
 	import Detail from './Detail.svelte';
 	import Menu_admin from './Menu_admin.svelte';
+	import Howto from './Howto.svelte';
 	
 
 
@@ -55,6 +56,8 @@
 				<Detail/>
 			{:else if $mode == 'menu_admin'}
 				<Menu_admin/>
+			{:else if $mode == 'howto'}
+				<Howto/>	
 			{/if}
 		<Logout/>	
 	{/if}
