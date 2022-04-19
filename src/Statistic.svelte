@@ -202,7 +202,7 @@
 	}
 
 	.bars rect {
-		fill: #a11;
+		fill: #ffa0df;
 		stroke: none;
 		opacity: 1;
 	}

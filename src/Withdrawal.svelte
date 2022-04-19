@@ -8,7 +8,7 @@ function arrayRemove(arr, value) {
 }
 
 function cancel(value){
-  if(confirm("Would you like to cancel your quata?")){
+  if(confirm("Would you like to cancel your quota?")){
     $accounts[$account].course = arrayRemove($accounts[$account].course,value);
     $courses[value].quata -= 1;
   }

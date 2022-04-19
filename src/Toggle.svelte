@@ -14,7 +14,7 @@
 	}	
 
 	function no_quata(){
-			alert('no seat left!')
+			alert('no quota left!')
 	}
 
 	

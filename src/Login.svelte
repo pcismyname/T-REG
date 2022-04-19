@@ -35,7 +35,7 @@
 
 <body> 
     <div class="center">
-        <h1>Enrollment Login</h1>
+        <h1>Quota Request Login</h1>
 
         <div>
             <div class="word"><label for="UserId">User ID</label></div> 

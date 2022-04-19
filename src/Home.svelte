@@ -8,7 +8,7 @@
  
   <h1>Welcome to </h1>
   <img class="logo" src="img\logo.png" alt="">
-  <h2>Online enrollment system <br> for University</h2>
+  <h2>Online quota request system <br> for University</h2>
   <img class="mascothome" src="img\mascothome.png" alt="">
   <span class = 'btn'>
     <button  on:click={()=>$mode='signin'} class = 'btn1'>Sign In</button><br>
