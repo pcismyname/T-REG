@@ -58,17 +58,18 @@
         border-radius: 20px;
         cursor: pointer;
         font-size: 1.5rem;
-        padding: 5.4px;
+        padding: 5.8px;
         background: rgba(255, 255, 255, 0);
         margin: 50px;
         text-align: center;}
         
-    img{margin: auto;
+    img{margin-bottom: 50px;
+      margin-right: auto ;
+      margin-left: auto;
       max-width: 60%;
       height: auto;
       position: relative;
       box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2), 0px 6px 20px 0px rgba(0,0,0,0.19);
-      margin:20 rem;
       display: block;
 }
 </style>
