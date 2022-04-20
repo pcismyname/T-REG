@@ -1,19 +1,26 @@
 <script> 
         import {mode} from './stores.js';
+
 </script>
 
 <body>
 <center><h1>รายละเอียดรายวิชา</h1></center>
 
 <div class="box1">
-    <button on:click={()=>$mode='detail'}><h2>SF210</h2><br>Programming skill development 1</button>
-    <button on:click={()=>$mode='detail'}><h2>SF220</h2><br>Introduction to software engineering</button>
-    <button on:click={()=>$mode='detail'}><h2>SF230</h2><br>Linear Algebra</button>
+    <button onclick=" window.open('https://drive.google.com/file/d/1tbPDA0_oJ6D1rgvSFIpQYmIxnteoHI-9/view?usp=sharing','_blank')">
+        <h2>SF210</h2><br>Programming skill development 1</button>
+    <button onclick=" window.open('https://drive.google.com/file/d/1TaWH6bmzdNHx-cnvoYTltOB2ucLiFH9F/view?usp=sharing','_blank')">
+        <h2>SF220</h2><br>Introduction to software engineering</button>
+    <button onclick=" window.open('https://drive.google.com/file/d/1_xfTbKqBpxxx15pTNJJqqTBi5Uwu0oCk/view?usp=sharing','_blank')">
+        <h2>SF230</h2><br>Linear Algebra</button>
 </div>
 <div class="box2">
-    <button on:click={()=>$mode='detail'}><h2>MA111</h2><br>Fundamentals of Calculus</button>
-    <button on:click={()=>$mode='detail'}><h2>TU105</h2><br>Communication skills in English</button>
-    <button on:click={()=>$mode='detail'}><h2>TU100</h2><br>Civic Engagement</button>
+    <button onclick=" window.open('https://drive.google.com/file/d/1Onw-1UzEqQ114PmCiEWjm6zICTdUItP6/view?usp=sharing','_blank')">
+            <h2>MA111</h2><br>Fundamentals of Calculus</button>
+    <button onclick=" window.open('http://litu.tu.ac.th/2019/assets/public/kcfinder/upload/public/eltu_course_2020/TU105%20Sem1-2020%20Student%20version%2013%20Aug.pdf','_blank')">
+            <h2>TU105</h2><br>Communication skills in English</button>
+    <button onclick=" window.open('https://drive.google.com/file/d/117GMUeA7zFG3Vub9qEgm7lHgkChOLTRH/view?usp=sharing','_blank')">
+            <h2>TU100</h2><br>Civic Engagement</button>
 </div>
 
 <center>
