@@ -1,5 +1,5 @@
 <script>
-	import { islogin, mode } from './stores.js';
+	import { islogin, isadmin, mode } from './stores.js';
 	import Complete from './Complete.svelte'
 	import Login from './Login.svelte';
 	import Logout from './Logout.svelte';
@@ -17,8 +17,6 @@
 
 
 </script>	
-
-
 
 <body>
 	<nav class="top">
@@ -53,10 +51,15 @@
 				<Withdraw/>
 			{:else if $mode == 'detail'}
 				<Detail/>
-			{:else if $mode == 'menu_admin'}
+			{/if}
+			<Logout/>	
+	{:else if $isadmin}
+			{#if $mode == 'menu_admin'}
 				<Menu_admin/>
 			{:else if $mode == 'modify'}
 				<Modify/>	
+			{:else if $mode == 'statistic'}
+				<Statistic/>
 			{/if}
 		<Logout/>	
 	{/if}

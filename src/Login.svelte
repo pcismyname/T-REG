@@ -1,5 +1,5 @@
 <script>
-    import { accounts, account, islogin, mode } from './stores.js';
+    import { accounts, account, islogin, isadmin, mode } from './stores.js';
     let username = '';
     let pin = '';
 
@@ -8,7 +8,7 @@
             alert('Incorrect Username or password');
         }
         else if($accounts[username].pin == 'admin' && username == 'admin') {
-            $islogin = true;
+            $isadmin = true;
             $mode = 'menu_admin';
             $account = username;
             username = '';
