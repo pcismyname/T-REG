@@ -86,23 +86,23 @@
     body{font-family: 'K2D', sans-serif;}
 
     h1{
-      color: white;
+      color: rgba(101, 99, 186, 1);
       font-family: 'K2D', sans-serif;
     }
 
 	h2{
-		font-size: 30px;
+		font-size: 35px;
 		color: rgba(101, 99, 186, 1);
-		margin-bottom: -15px;
+		margin-bottom: -20px;
 	}
 
 	.box{
 		width: 330px;
 		height: 125px;
 		background-color: white;
-		border-radius: 50px;
+		border-radius: 20px;
       	color: rgba(0, 148, 255, 1);
-		font-size: 20px;
+		font-size: 23px;
 		display: inline-block;
 		text-align: left;
 		margin-left: 15px;
