@@ -22,7 +22,7 @@
             {#each keys as sub}
                 {#if sub == item}
                     <tr>
-                        <td>{$courses[item].code}</td>
+                        <td>{$courses[item].code.toUpperCase()}</td>
                         <td>{$courses[item].sub}</td>
                         <td>{$courses[item].credit}</td>
                         <td>{$courses[item].day}</td>

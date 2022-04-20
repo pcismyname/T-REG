@@ -3,7 +3,7 @@
 </script>
 
 <body>
-<center><h1>คู่มือการขอโควต้า</h1></center>
+<center><p class='Head1'>คู่มือการขอโควต้า</p></center>
 <button on:click={()=>$mode='menu'} class="back">BACK TO MENU</button>
 
 <div>
@@ -45,9 +45,8 @@
         color: white;
         cursor: pointer;
     }
-    h1{ 
-        font-size: 10 em;
-        color: white;
+    p.Head1{font-size: 3.3rem;
+        color: rgba(101, 99, 186, 1);
         margin: auto;
     }
 
