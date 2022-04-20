@@ -35,7 +35,7 @@
 
 
 
-<h1>สถิติการขอโควต้า</h1> 
+<center><h1>สถิติการขอโควต้า</h1></center>
 <button on:click={()=>$mode='menu_admin'} class="back">BACK TO MENU</button>
 
 <div class="chart" bind:clientWidth={width} bind:clientHeight={height}>
@@ -72,80 +72,45 @@
 	</svg>
 </div>
 
-<br><br><br>
+<br>
 
-<div class = "tableConfig">
-<table class="main_table">
-    <tr>
-        <th>รหัสวิชา</th>
-        <th>ชื่อวิชา</th>
-        <th>จำนวนผู้ขอโควต้า</th>
-    </tr>
-    
-    <tr class="main_row">
-      <td>SF210</td>
-      <td>PROGRAMMING SKILL DEVELOPMENT 1 </td>
-      <td>{($courses['sf210_1'].quata + $courses['sf210_2'].quata + $courses['sf210_3'].quata)}</td>
-    </tr>
-
-    <tr  class="main_row">
-      <td>SF220</td>
-      <td>INTRODUCTION TO SOFTWARE ENGINEERING</td>
-      <td>{($courses['sf220_1'].quata + $courses['sf220_2'].quata + $courses['sf220_3'].quata)}</td>
-    </tr>
-
-    <tr  class="main_row">
-      <td>TU100</td>
-      <td>CIVIC ENGAGEMENT</td>
-      <td>{($courses['tu100_1'].quata + $courses['tu100_2'].quata + $courses['tu100_3'].quata)}</td>
-    </tr>
-
-</table>
-</div >
-
-
+<body>
+	<center>
+	<div class="box"><h2>SF210</h2><br>จำนวนผู้ขอโควต้า {($courses['sf210_1'].quata + $courses['sf210_2'].quata + $courses['sf210_3'].quata)} คน </div>
+	<div class="box"><h2>SF220</h2><br>จำนวนผู้ขอโควต้า {($courses['sf220_1'].quata + $courses['sf220_2'].quata + $courses['sf220_3'].quata)} คน </div>
+	<div class="box"><h2>TU100</h2><br>จำนวนผู้ขอโควต้า {($courses['tu100_1'].quata + $courses['tu100_2'].quata + $courses['tu100_3'].quata)} คน </div>
+	</center>
+</body>
 
 <style>
-    .tableConfig{
-      padding: 20px;
-      border: 5px solid white;
-      border-radius: 50px;
-      width: 75%;
-      margin-left: auto;
-      margin-right: auto; 
-    }
-
-    .main_table { 
-      border-collapse: collapse; 
-      border-spacing: 20px 10px;
-      margin-left: auto;
-      margin-right: auto;
-      font-size: 18px;
-      color: white;
-      width: 100%;  
-    }
-
-    th{
-      color: rgba(101, 99, 186, 1);
-      padding-top: 10px;
-      padding-bottom: 10px;
-      text-align: center;  
-    }
-    
-    td{
-      text-align: center;
-      padding-left: 29px;
-      padding-right: 39px;
-      padding-top: 5px;
-      padding-bottom: 5px;
-    }
-  
+    body{font-family: 'K2D', sans-serif;}
 
     h1{
-      margin-left: 100px;
       color: white;
-      padding: 20px;
+      font-family: 'K2D', sans-serif;
     }
+
+	h2{
+		font-size: 30px;
+		color: rgba(101, 99, 186, 1);
+		margin-bottom: -15px;
+	}
+
+	.box{
+		width: 330px;
+		height: 125px;
+		background-color: white;
+		border-radius: 50px;
+      	color: rgba(0, 148, 255, 1);
+		font-size: 20px;
+		display: inline-block;
+		text-align: left;
+		margin-left: 15px;
+		margin-right: 15px;
+		padding: 20px;
+	}
+
+
    
     .back {
     	background: rgba(255, 255, 255, 0);
@@ -158,12 +123,12 @@
         border-radius: 20px;
         border: 4px solid white;  
         color: white;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'K2D', sans-serif;
         cursor: pointer;
     }
     .chart {
 		width: 100%;
-		max-width: 1000px;
+		max-width: 700px;
 		margin: 0 auto;
 
 	}
