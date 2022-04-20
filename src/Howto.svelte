@@ -3,7 +3,7 @@
 </script>
 
 <body>
-<center></center><h1>คู่มือการขอโควต้า</h1></center>
+<center><h1>คู่มือการขอโควต้า</h1></center>
 <button on:click={()=>$mode='menu'} class="back">BACK TO MENU</button>
 
 <div>
@@ -61,16 +61,14 @@
         padding: 5.4px;
         background: rgba(255, 255, 255, 0);
         margin: 50px;
-        float: left;
-      text-align: center;}
+        text-align: center;}
         
     img{margin: auto;
       max-width: 60%;
       height: auto;
       position: relative;
       box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2), 0px 6px 20px 0px rgba(0,0,0,0.19);
-      margin-right: auto;
-      margin-left: auto;
+      margin:20 rem;
       display: block;
 }
 </style>
