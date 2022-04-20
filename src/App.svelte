@@ -15,7 +15,8 @@
 	import Menu_admin from './Menu_admin.svelte';
 	import Modify from './Modify.svelte';
 	import Howto from './Howto.svelte';
-
+	import Contact from './Contact.svelte';
+	import Help from './Help.svelte';
 
 </script>	
 
@@ -24,8 +25,8 @@
 		<img class="logo" src="img\logo.png" alt="">
 			<div class="nav_lists">		
 				<button on:click={()=>$mode='home'} class="nav_item">Home</button>
-				<button on:click={()=>$mode='home'} class="nav_item">Contact Us</button>
-				<button on:click={()=>$mode='home'} class="nav_item">Help</button>
+				<button on:click={()=>$mode='Contact'} class="nav_item">Contact Us</button>
+				<button on:click={()=>$mode='Help'} class="nav_item">Help</button>
 			</div>
 		</nav>
 	
@@ -34,6 +35,12 @@
 		<Sign/>
 	{:else if $mode == 'signin'}
 		<Login/>
+		<Sign/>
+	{:else if $mode == 'Contact'}
+		<Contact/>
+		<Sign/>
+	{:else if $mode == 'Help'}
+		<Help/>
 		<Sign/>
 	{:else if $islogin}
 			{#if $mode == 'menu'}
