@@ -4,7 +4,7 @@
     var keys = Object.keys($courses);
 
     function submit(){
-      $mode = 'menu';
+      $mode = 'menu_admin';
       alert('You have successfully modify max quata');
     }
 </script>
