@@ -18,7 +18,7 @@
 	}
 
 	function same(){
-		alert('Can not choose same subject!\nPlease cancel your current quata.')
+		alert('Can not choose same subject!\nPlease cancel your current quota.')
 	} 
 
 
