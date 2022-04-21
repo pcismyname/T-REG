@@ -12,8 +12,8 @@
 	const yTicks = [0, 50, 100, 150, 200];
 	const padding = { top: 20, right: 15, bottom: 20, left: 25 };
 
-	let width = 1000;
-	let height = 400;
+	let width = 500;
+	let height = 200;
 
 	function formatMobile(tick) {
 		return "'" + tick.toString().slice(-2);
