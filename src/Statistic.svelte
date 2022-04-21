@@ -54,7 +54,7 @@
 		<g class="axis x-axis">
 			{#each points as point, i}
 				<g class="tick" transform="translate({xScale(i)},{height})">
-					<text x="{barWidth/2}" y="-4">{width > 760 ? point.subject : formatMobile(point.subject)}</text>
+					<text x="{barWidth/2}" y="-4">{width > 380 ? point.subject : formatMobile(point.subject)}</text>
 				</g>
 			{/each}
 		</g>
