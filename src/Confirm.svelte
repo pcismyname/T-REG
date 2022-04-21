@@ -3,6 +3,17 @@
 
 
   function submit(){
+    for(let i = 0; i < $accounts[$account].course.length; i++){
+      for(let j = 0; j<$temp.length; j++){
+        if($temp[j] != ''){
+          if($courses[$temp[j]].code == $accounts[$account].course[i].slice(0,5)){
+            alert('You have selected the same subject' +"\nPlease cancle your current quata.");
+            return;
+          }
+        }
+      }
+    }
+
     $mode = 'complete';
     $accounts[$account].course = $accounts[$account].course.concat($temp);
     for (let i=0; i<$temp.length ;i++){

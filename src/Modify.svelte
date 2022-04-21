@@ -23,7 +23,7 @@
   </tr>
     {#each keys as key}
       <tr>
-        <td>{$courses[key].code}</td>
+        <td><p style="text-transform: uppercase;">{$courses[key].code}</p></td>
         <td>{$courses[key].sub}</td>
         <td>{$courses[key].sec}</td>
         <td>{$courses[key].max}</td>

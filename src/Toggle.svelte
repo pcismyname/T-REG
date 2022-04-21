@@ -1,5 +1,5 @@
 <script>
-	import { temp,courses } from './stores.js';
+	import { accounts, account, temp,courses } from './stores.js';
 	export let type = 'checkbox'
 	export let checked = false
 	export let group = ''
@@ -16,6 +16,12 @@
 	function no_quata(){
 			alert('no quota left!')
 	}
+
+	function same(){
+		alert('Can not choose same subject!\nPlease cancel your current quata.')
+	} 
+
+
 
 	
 </script>
