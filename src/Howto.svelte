@@ -7,7 +7,7 @@
 <button on:click={()=>$mode='menu'} class="back">BACK TO MENU</button>
 
 <div>
-  <p class="head">วิธีการขอโคต้ารายวิชา</p>
+  <p class="head">วิธีการขอโควต้ารายวิชา</p>
   <img src="img/howto/1.png" alt="">
   <img src="img/howto/2.png" alt="">
   <img src="img/howto/3.png" alt="">
@@ -17,12 +17,12 @@
 
   </div>
   <div>
-    <p class="head">วิธีผลการขอโควต้า</p>
+    <p class="head">วิธีดูผลการขอโควต้า</p>
     <img src="img/howto/9.png" alt="">
     <img src="img/howto/10.png" alt="">
   </div>  
   <div>
-    <p class="head">วิธีถอนการขอโคต้ารายวิชา</p>
+    <p class="head">วิธีเพิกถอนการขอโควต้า</p>
     <img src="img/howto/7.png" alt="">
     <img src="img/howto/8.png" alt="">
   </div>

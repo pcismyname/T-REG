@@ -5,7 +5,7 @@
 
 </script>
 <body>
-<h1>ผลการลงทะเบียน</h1>
+<h1>ผลการขอโควต้า</h1>
 
 <div class="tableConfig">
 <table class="main_table">

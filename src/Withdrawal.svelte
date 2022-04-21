@@ -20,7 +20,7 @@ function cancel(value){
 
 <body>
 
-<h1>ยกเลิกการขอโควต้า</h1>
+<h1>เพิกถอนการขอโควต้า</h1>
 <div class="tableConfig">
     <table class="main_table">
       <tr>
