@@ -5,15 +5,21 @@
   function submit(){
     $mode = 'complete';
     $accounts[$account].course = $accounts[$account].course.concat($temp);
-    for (let i=0;i<$temp.length;i++){
-      $courses[$temp[i]].quata += 1;
+    for (let i=0; i<$temp.length ;i++){
+      if($temp[i] != ''){      
+        $courses[$temp[i]].quata += 1;
+      }
     }
+    clear();
+  }
+
+  function clear(){
     $temp = [];
   }
 
   function back(){
     $mode = 'regist';
-    $temp = [];
+    clear();
   }
 
 </script>
@@ -32,7 +38,7 @@
   {#each $temp as item}
     {#if item != ''}
       <tr>
-        <td>{$courses[item].code.toUpperCase()}</td>
+        <td>{$courses[item].code}</td>
         <td>{$courses[item].sub}</td>
         <td>{$courses[item].credit}</td>
         <td>{$courses[item].day}</td>
