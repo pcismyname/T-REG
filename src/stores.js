@@ -15,7 +15,16 @@ let data_base = {'sf210_1':{quata:30,max:30,code:'sf210',sub:'Programmin skill d
             'sf220_3':{quata:20,max:50,code:'sf220',sub:'Introduction to software engnieer',sec:'860006',name:'Ringo',surename:'Star',time:'09.00-12.00',day:'Saturday',credit:'3'},
             'tu100_1':{quata:50,max:50,code:'tu100',sub:'Civic Engagment',sec:'460007',name:'Noel',surename:'Gallage',time:'13.00-14.00',day:'Sunday',credit:'3'},
             'tu100_2':{quata:20,max:50,code:'tu100',sub:'Civic Engagment',sec:'460008',name:'Liam',surename:'Galger',time:'13.00-14.00',day:'Monday',credit:'3'},
-            'tu100_3':{quata:40,max:50,code:'tu100',sub:'Civic Engagment',sec:'460009',name:'Harry',surename:'Styles',time:'13.00-16.00',day:'Tuesday',credit:'3'},};
+            'tu100_3':{quata:40,max:50,code:'tu100',sub:'Civic Engagment',sec:'460009',name:'Harry',surename:'Styles',time:'13.00-16.00',day:'Tuesday',credit:'3'},
+            'sf230_1':{quata:20,max:50,code:'sf230',sub:'Linear algebra',sec:'930001',name:'Bruno',surename:'Mars',time:'09.00-12.00',day:'Monday',credit:'3'},
+            'sf230_2':{quata:35,max:50,code:'sf230',sub:'Linear algebra',sec:'930002',name:'Taylor',surename:'Swift',time:'13.00-16.00',day:'Saturday',credit:'3'},
+            'sf230_3':{quata:18,max:50,code:'sf230',sub:'Linear algebra',sec:'930003',name:'Michael',surename:'Jack',time:'07.00-11.00',day:'Tuesday',credit:'3'},
+            'ma111_1':{quata:12,max:70,code:'ma111',sub:'Fundamentals of Calculus',sec:'230001',name:'Momed',surename:'Sallah',time:'13.00-15.00',day:'Thursday',credit:'3'},
+            'ma111_2':{quata:69,max:70,code:'ma111',sub:'Fundamentals of Calculus',sec:'230002',name:'Jason',surename:'Maraz',time:'13.00-15.00',day:'Wednesday',credit:'3'},
+            'ma111_3':{quata:45,max:70,code:'ma111',sub:'Fundamentals of Calculus',sec:'230003',name:'Justin',surename:'Biebe',time:'08.00-10.00',day:'Tuesday',credit:'3'},
+            'tu105_1':{quata:10,max:30,code:'tu105',sub:'Communication skills in English',sec:'310004',name:'Jordan',surename:'Hendoo',time:'07.00-11.00',day:'Monday',credit:'3'},
+            'tu105_2':{quata:1,max:30,code:'tu105',sub:'Communication skills in English',sec:'310005',name:'Shawn',surename:'Mendes',time:'13.00-17.00',day:'Friday',credit:'3'},
+            'tu105_3':{quata:13,max:30,code:'tu105',sub:'Communication skills in English',sec:'310006',name:'Liam',surename:'Galger',time:'08.00-12.00',day:'Wednesday',credit:'3'},};
 
 
 export const courses = writable(data_base);
