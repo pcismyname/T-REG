@@ -46,7 +46,7 @@
 
     .photo{ 
         position: relative;
-        top: -600px;
+        top: -500px;
         left: 160px;
         background-size: cover;
         height: 400px;
