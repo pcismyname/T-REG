@@ -4,7 +4,7 @@
 </script>
 
 <body>
-    <div class="box">Do you neeed any help?<br>click here!<br>We will help you.</div>
+    <div class="box">Do you need any help?<br>We will help you.<br>click here!</div>
     <div><img {src}  class = "photo" alt=""></div>
     <button  on:click={()=>$mode='Contact'}>Contact Us</button>
 </body>
