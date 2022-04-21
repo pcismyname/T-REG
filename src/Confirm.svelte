@@ -38,7 +38,7 @@
   {#each $temp as item}
     {#if item != ''}
       <tr>
-        <td>{$courses[item].code}</td>
+        <td><p style="text-transform: uppercase;">{$courses[item].code}</p></td>
         <td>{$courses[item].sub}</td>
         <td>{$courses[item].credit}</td>
         <td>{$courses[item].day}</td>
