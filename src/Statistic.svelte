@@ -6,9 +6,12 @@
 		{ subject: 'SF210', rate: ($courses['sf210_1'].quata + $courses['sf210_2'].quata + $courses['sf210_3'].quata) },
 		{ subject: 'SF220', rate: ($courses['sf220_1'].quata + $courses['sf220_2'].quata + $courses['sf220_3'].quata) },
 		{ subject: 'TU100', rate: ($courses['tu100_1'].quata + $courses['tu100_2'].quata + $courses['tu100_3'].quata) },
+		{ subject: 'TU105', rate: ($courses['tu105_1'].quata + $courses['tu105_2'].quata + $courses['tu105_3'].quata) },
+		{ subject: 'SF230', rate: ($courses['sf230_1'].quata + $courses['sf230_2'].quata + $courses['sf230_3'].quata) },
+		{ subject: 'MA111', rate: ($courses['ma111_1'].quata + $courses['ma111_2'].quata + $courses['ma111_3'].quata) },
 	];
 
-	const xTicks = ['SF210','SF220','TU100'];
+	const xTicks = ['SF210','SF220','TU100','TU105','SF230','MA111'];
 	const yTicks = [0, 50, 100, 150, 200];
 	const padding = { top: 20, right: 15, bottom: 20, left: 25 };
 
@@ -79,6 +82,10 @@
 	<div class="box"><h2>SF210</h2><br>จำนวนผู้ขอโควต้า {($courses['sf210_1'].quata + $courses['sf210_2'].quata + $courses['sf210_3'].quata)} คน </div>
 	<div class="box"><h2>SF220</h2><br>จำนวนผู้ขอโควต้า {($courses['sf220_1'].quata + $courses['sf220_2'].quata + $courses['sf220_3'].quata)} คน </div>
 	<div class="box"><h2>TU100</h2><br>จำนวนผู้ขอโควต้า {($courses['tu100_1'].quata + $courses['tu100_2'].quata + $courses['tu100_3'].quata)} คน </div>
+	<br><br>
+	<div class="box"><h2>TU105</h2><br>จำนวนผู้ขอโควต้า {($courses['tu105_1'].quata + $courses['tu105_2'].quata + $courses['tu105_3'].quata)} คน </div>
+	<div class="box"><h2>SF230</h2><br>จำนวนผู้ขอโควต้า {($courses['sf230_1'].quata + $courses['sf230_2'].quata + $courses['sf230_3'].quata)} คน </div>
+	<div class="box"><h2>MA111</h2><br>จำนวนผู้ขอโควต้า {($courses['ma111_1'].quata + $courses['ma111_2'].quata + $courses['ma111_3'].quata)} คน </div>
 	</center>
 </body>
 
