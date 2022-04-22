@@ -35,7 +35,7 @@
 
 </script>
 <body>
-<h1>ยืนยันการลงทะเบียน</h1>
+<h1>ยืนยันการขอโควต้า</h1>
 
 <div class="tableConfig">
 <table class="main_table">
@@ -60,7 +60,7 @@
 </table>
 </div>
 
-<button on:click={submit} class ="submit">ยืนยันการลงทะเบียน</button>
+<button on:click={submit} class ="submit">ยืนยันการขอโควต้า</button>
 <button on:click={back} class="back">BACK TO MENU</button>
 </body>
 

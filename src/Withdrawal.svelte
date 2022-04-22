@@ -39,7 +39,7 @@ function cancel(value){
           <td>{$courses[item].credit}</td>
           <td>{$courses[item].day}</td>
           <td>{$courses[item].time}</td>
-          <td><button id="cancle" on:click={cancel(item)} class="cancle">ถอนรายวิชา</button></td>
+          <td><button id="cancle" on:click={cancel(item)} class="cancle">ถอนโควต้า</button></td>
         </tr>
         {/if}
     {/each}

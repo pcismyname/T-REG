@@ -34,7 +34,7 @@
   </table>
   </div>
 <button on:click={()=>$mode='menu_admin'} class="back">BACK TO MENU</button>
-<button on:click={submit} class ="submit">ยืนยันการลงทะเบียน</button>
+<button on:click={submit} class ="submit">ยืนยันการเพิ่ม/ลดโควต้า</button>
 
 </body>
 

@@ -276,7 +276,7 @@
 {/if}
 </table>
 
-<button on:click={submit} class="complete">ยืนยันการลงทะเบียน</button>
+<button on:click={submit} class="complete">ยืนยันการขอโควต้า</button>
 </div >
 </body>
 
