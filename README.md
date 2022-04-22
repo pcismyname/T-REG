@@ -1,5 +1,4 @@
 Website : https://t-reg.netlify.app/
-[![Netlify Status](https://api.netlify.com/api/v1/badges/20ae06eb-5dd7-43c4-969a-5193df71a1c8/deploy-status)](https://app.netlify.com/sites/t-reg/deploys)
 
 *Psst — looking for a more complete solution? Check out [SvelteKit](https://kit.svelte.dev), the official framework for building web applications of all sizes, with a beautiful development experience and flexible filesystem-based routing.*
 
