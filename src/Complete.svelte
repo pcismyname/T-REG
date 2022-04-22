@@ -1,12 +1,20 @@
 <script>
         import { account,accounts, mode } from './stores.js';
 </script>
-
- <img src="img/correct.png" alt="">
+    <div class="complete">
+    <img src="img/correct.png" alt="">
     <h1>ขอโควต้ารายวิชาสำเร็จ</h1>
     <button on:click={()=>$mode='menu'} class="back">BACK TO MENU</button>
-
+    </div>
 <style>
+
+    .complete{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
     img {
         max-width:350px;
         max-height:200px;
