@@ -13,6 +13,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding-top: 50px;
     }
 
     img {
@@ -20,22 +21,19 @@
         max-height:200px;
         width: auto;
         height: auto;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%)
     }
-    h1{
-        font-family: 'K2D', sans-serif;
-        margin-top: 20rem;
-        color: white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        
 
+    h1 {
+        color: white;
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        font-weight: 100;
+        line-height: 1.1;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
     }
+
   
     .back {
         background: rgba(255, 255, 255, 0);
